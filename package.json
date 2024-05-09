@@ -53,7 +53,7 @@
   },
   "devDependencies": {
     "@babel/plugin-syntax-import-attributes": "^7.24.1",
-    "@cypress/code-coverage": "^3.12.21",
+    "@cypress/code-coverage": "^3.12.39",
     "@idrinth/duplicate-style-check": "^1.1.0",
     "@idrinth/react-file-based-routes": "^1.2.16",
     "@idrinth/rollup-plugin-react-modular-css": "^1.1.2",
