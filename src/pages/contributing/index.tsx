@@ -6,10 +6,9 @@ import pkg from '../../../package.json' with {
 };
 import Lang from '../../components/lang.tsx';
 import ContentUnit from '../../components/content-unit.tsx';
-/*import schema from '../../../../mindmap/schema.json' with {
+import schema from '@idrinth-api-bench/mindmap/schema.json' with {
   type: 'json',
-};*/
-const schema = {};
+};
 import {
   INDENTATION_SPACES,
 } from '../../constants.ts';
