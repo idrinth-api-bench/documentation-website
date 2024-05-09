@@ -1,0 +1,469 @@
+
+ "Home"
+ "Imprint"
+ "Sponsors"
+ "Contributors"
+ "Support"
+ "Contributing"
+ "License"
+ "Autowiring"
+ "Middlewares"
+ "Results"
+ "Usage"
+ "Logging"
+ "Storage"
+ "Routes"
+  quick- "Quick Start"
+ "FAQ"
+  code-of- "Code of Conduct"
+
+
+
+ "@idrinth/api-bench on NPMJS"
+ "@idrinth/api-bench"
+ "@idrinth/api-bench-cli on NPMJS"
+ "@idrinth/api-bench-cli"
+ "NPM"
+
+ "idrinth/api-bench-gitlab-runner on DockerHub"
+ "Gitlab Runner"
+ "idrinth/api-bench-gitea-action on DockerHub"
+ "Gitea Action"
+ "idrinth/api-bench on DockerHub"
+ "Pure Alpine"
+ "idrinth/api-bench-history-microservice on DockerHub"
+ "History Microservice"
+ "idrinth/api-bench-history-website on DockerHub"
+ "History Website"
+ "DockerHub"
+
+ "idrinth/api-bench on GitHub"
+ "GitHub"
+
+ "idrinth/api-bench on Medium"
+ "Medium"
+
+ "idrinth-api-bench on YouTube"
+ "YouTube"
+
+ "@idrinth/api-bench on slack"
+ "Slack"
+
+ "@idrinth/api-bench on LinkedIN"
+ "LinkedIn"
+  open-
+ "@idrinth/api-bench projects on OpenSauced"
+ "OpenSauced"
+
+ "@idrinth/api-bench on Reddit"
+ "Reddit"
+
+code-of-
+
+ "Code of Conduct"
+ "The Contributor's Code of Conduct for @idrinth/api-bench"
+
+
+
+ "Home"
+ "Welcome to the documentation for the framework @idrinth/api-bench"
+ "What does this project do?"
+ "This project provides a framework for testing rest-APIs and websites for  changes in response times."
+ "This helps to detect performance changes in code in a quick and simple manner."
+
+ "Version 2.7.4 Demo"
+
+ "Why use a Benchmark Runner?"
+ "Given that the amount of APIs increase by moving to microservices, we need a way to determine if changes to a service's response times are related to code changes."
+ "For this purpose a defined load with repeatable requests with a medium amount of checks seems the most useful."
+  load-
+ "Why use a Load Test Runner?"
+ "For planning and scaling purposes, we need to know how many users we can handle with a given amount of microservice instances."
+ "For this purpose a defined growing load with repeatable requests with few checks seems the most useful."
+  content-
+ "Why use a Content Test Runner?"
+ "With the amount of APIs skyrocketing, the need to test them quickly and with as little effort as possible is required."
+ "For this purpose repeatable requests with many checks seems the most useful."
+
+ "Regarding existing libraries"
+ "Other tools like matteofigus/api-benchmark, bvanderlaan/api-bench-runner, or jeffbski/bench-rest are all untouched for quite a while and don't provide type definitions for typescript. This makes them less desirable when working with projects where the better static code check is a huge boost in development speed."
+ "A huge benefit of using this framework is writing route definitions once and reusing them across all desired test types."
+ "Additionally, this tool separates the validation thread from the thread processing the actual requests to further minimise the effect of complicated validations or huge response bodies on the data gathering."
+
+
+ "See video on YouTube"
+ "Watch more about this"
+ "YouTube Video Player"
+
+
+
+ "FAQ"
+ "frequently asked questions about @idrinth/api-bench"
+ "Frequently Asked Questions"
+ "If your question is not yet answered, head over to slack, LinkedIN or GitHub and leave it there. We will address it as quickly as possible."
+
+ "What is benchmarking?"
+ "Benchmarking is the process of measuring software performance against established best practices."
+ "What is load testing?"
+ "Load testing evaluates system behaviour under peak or anticipated load conditions."
+ "How long does it take to write a test?"
+ "The average time to write a test is 2-3 minutes. For beginners, it is about 15 minutes."
+ "How long does it take to setup?"
+ "By following the Quick Start, it only takes a few minutes!"
+ "Is the project in productive use?"
+ "Yes, it has been for most of it's lifetime."
+ "Is there any additional schooling material available?"
+ "Not yet, it's actively being worked on."
+ "Is the framework free to use?"
+ "Yes, entirely. Even support via GitHub is free."
+ "How fast is the public support?"
+ "We strive to react within 24 hours and latest within 48 hours."
+
+
+
+ "Imprint"
+ "Imprint and privacy statements for this website"
+
+
+
+ "Sponsors | Contributing"
+ "The following businesses and companies are sponsoring the development of api-bench by providing time, money or necessary tools."
+ "Sponsors"
+ "The following businesses and companies support the development of @idrinth/api-bench. This means they provide time, money or necessary tools for the development."
+
+ "Björn Büttner is a Germany based business, that provides custom development and hosting services in a web context. Additionally to that some training and consulting are offered, that do include this project for performance monitoring."
+ "The business supports the project by hosting this documentation site for free and supplying the domain."
+
+ "jungwild is a Germany based recruiting agency, that uses the framework for testing their own APIs."
+ "The agency provides some time for testing and developing changes of the framework before release."
+
+
+
+ "Contributors | Contributing"
+ "These are the people who made the site and framework what they are today."
+ "Contributors"
+ "A big thank you to everyone who contributed. Below are the ones who contributed code, but other contributions are as valuable."
+ "Code Contributors"
+ "None Code Contributors"
+
+
+
+ "Support"
+ "Support options for the @idrinth/api-bench framework."
+ "Support"
+ "No matter who you are, you can get support via GitHub issues and discussions. Support reaction times depend on the availability of volunteers, so it may take a day or two."
+
+ "Commercial support"
+ "If your closed source software needs support, that can't be handled via the above means, Björn Büttner also provides payed support on a business basis. You can reach the business"
+
+ "Professional Training"
+ "Training is provided by Björn Büttner on a business basis for organisations. For pricing and scheduling contact the business"
+
+
+
+ "404 NOT FOUND"
+ "The page you desired has not been found"
+ "404 Not Found"
+ "Sadly the URL you entered couldn't be found."
+
+
+
+ "Contributing"
+ "Contribution guidelines for the framework @idrinth/api-bench"
+ "Contributing Guidelines"
+ "Any and all contributions are encouraged."
+ "Structure Overview on YouTube"
+
+ "Structure"
+ "The project is a mono-repo grouped into multiple subprojects, for example documentation-website, framework, history-microservice, CLI, mindmap, history-website. You can find more detailed instructions for the specific part in the corresponding folder's readme."
+
+ "Issues"
+ "Any idea and bug report is considered a contribution. Not only do they help improving the code base, they help other people to get more use out of this framework. Please try to stick to the format of predefined issue types to make it easier to filter and handle for anyone interested in the topic."
+
+ "Code"
+ "The style guidelines are provided via eslint. Please try to optimise code for readability, since code will be read way more often than it will be changed."
+ "While adding functionality, keep in mind to break existing interfaces, entry points and functionality only if absolutely necessary."
+
+ "Picking the right issue"
+ "Issues that are good for relatively new coders are marked as `Good first issue`, issues marked as `help wanted` require a bit more knowledge about the project."
+ "Within an issue, you find the project information on the right-hand side, opening them up will reveal further estimates about size, difficulty, priority and main affected project part"
+
+ "Contribution workflow"
+ "fork the repository"
+ "mention in the issue, that you are working on it (it will be assigned for a few weeks then)"
+ "create a feature branch (issue-xxx-does-something) from master"
+ "create a draft pull request"
+ "mention fixes #xxx in the description"
+ "make your changes to the branch"
+ "check if actions are all green"
+ "mark as ready to review"
+ "get changes reviewed"
+ "if review is positive get changes merged otherwise fix and the send back to review"
+
+ "Short Translation YouTube Tutorial"
+
+ "Mindmap"
+ "Short Mindmap YouTube Tutorial"
+ "Contributing to the mindmap is encouraged. The mindmap is built from data.yml in /mindmap and follows the following"
+ "In order to display nodes, they must have a text property. They may also have; a URL, description, and child nodes."
+
+ "Tests"
+ "Testing new code is expected and adding tests or improving tests for old code is appreciated. The goal is to find most issues by either static analysis or unit and integration tests."
+
+ "Manual Tests"
+ "For manual testing you can run 'npm run coai' in the source folder to automatically check out and install all required files for testing."
+
+ "Naming conventions"
+ "camelCase for variables and functions"
+ "UPPER_SNAKE_CASE for constants"
+ "PascalCase for interfaces and classes"
+ "kebab-case for file names"
+
+ "Requirements"
+ "One of the last two node versions is required."
+  "Supported Operating S Linux, Windows, and macOS."
+
+ "Setup"
+ "Run the following commands to create the full"
+
+ "Commit Message Guidelines"
+ "*This specification is inspired by Angular commit messages guidelines."
+ "These are the rules for how Git commit messages for api-bench should be formatted. This format leads to easier to read commit history."
+ "Each commit message consists of a header, a body, and a footer."
+
+ "Commit Message Header"
+ "Headers must adhere to the following"
+ "The header is mandatory and should conform to the Commit Message Header format."
+
+ "Type"
+ "The list of supported"
+ " Changes that affect the build system or external dependencies"
+ " Changes to CI configuration files and scripts"
+ " Documentation changes"
+ " A new feature"
+ " A bug fix"
+ " A code change that improves performance"
+ " A code change that neither fixes a bug nor adds a feature"
+ " Adding missing tests or correcting existing tests"
+
+ "Scope"
+ "The scope should be the name of the affected part of the project. The list of supported"
+ "framework"
+ "website"
+ "history-microservice"
+ "history-website"
+ "dockerfiles"
+ "examples"
+
+ "Summary"
+ "The summary field should provide a succinct description of the change."
+ "use the imperative, present tense"
+ "don't capitalise the first letter"
+ "no dot (.) at the end"
+
+ "Commit Message Body"
+ "The body is mandatory for all commits. They should conform to the Commit Message Body format."
+ "The commit message body should explain *why* you are making the change. You can include a comparison of the previous behaviour with the new behaviour in order to illustrate the impact of the change."
+ "Just as in the summary, use the imperative, present tense."
+
+ "Commit Message Footer"
+ "The footer is optional. The Commit Message Footer format describes what the footer is used for and the structure it must have."
+ "The footer can contain information about breaking changes and deprecations and is also the place to reference GitHub issues and other pull requests that this commit closes or is related to."
+ "In case of breaking changes and deprecations the section should start with the phrase 'BREAKING CHANGE:' or 'DEPRECATED: ' respectively followed by a description. For"
+
+ "Complete Commit"
+ "Here' a complete example of a correct commit"
+
+ "Revert commits"
+ "If the commit reverts a previous commit, it should begin with '', followed by the header of the reverted commit."
+ "The content of the commit message body should"
+ "ID of the commit being reverted in the following `This reverts commit <SHA>`"
+ "a clear description of the reason for reverting the commit message."
+
+ "Pull Requests"
+ "Please open your pull requests in draft mode. When ready to review remove the draft. Do not force-push, it just creates additional work."
+
+ "Documentation"
+ "Documentation is an underrated part of every software. Adding any kind of clarification, example or improvement is highly appreciated and encouraged. The ones writing the documentation are the unsung heroes of open and closed source software."
+
+ "Examples"
+ "For examples, please keep in mind, that we don't want to overload any API. Don't use high load tasks, don't use APIs that are not for public use. Examples are expected to run without damaging anyone, including third parties."
+
+
+ "License"
+ "The framework @idrinth/api-bench is available under the MIT license"
+
+
+
+ "Autowiring | Usage"
+ "The framework @idrinth/api-bench can autowire environment variables into route definitions"
+ "Autowiring Route Parameters"
+ "Comment types will always win over default value types. If those two don't match, you might get weird results. Sadly, a few things can't be done."
+ "Types will be automatically applied if there is either a default value to get the type from or a comment like /* boolean */ parameter added in front of the parameter."
+ "Parameters of contained functions will be filled with environment variable values of the respective name (aBc -> A_BC)."
+
+ "Limitations"
+ "Do not use constants for their default values, they can't be properly analysed and will throw an Error."
+ "Do not use arrays or objects as default values, they can't be autowired."
+ "Destructuring is not supported."
+ "Default value types NOT of the same type as the parameter."
+
+ "Example"
+ "Here we autowire three environment variables as string to make the route easy to reuse."
+
+
+
+ "Middlewares | Usage"
+ "The framework @idrinth/api-bench provides default middlewares and allows for custom middlewares"
+ "Middlewares"
+ "Middlewares use an absolute file path to be loaded. The following characters will be used to expand short"
+
+ "Provided Middlewares"
+ "JSON and form encode"
+ "access token handling"
+ "csrf-header handling"
+ "status 2xx check"
+ "status 403 check"
+ "status 404 check"
+    user- "user-agent"
+ "cookies"
+ "json-validator"
+ "xml-validator"
+    silent-server- "silent-server-validator"
+
+ "Custom Middleware"
+ "For custom middleware, implement the following interface. Prepare is called before sending a request, process after a request. If an error is thrown in process, any further validations are skipped."
+
+
+
+ "Results | Usage"
+ "The framework @idrinth/api-bench provides default result handlers and allows for additional custom result handlers"
+ "Results"
+ "By default, all possible result formats are provided. The files are created in the application root, but that can be overwritten programmatically."
+
+ "This provides a file, that can easily opened by excel or handled programmatically."
+
+ "This provides a simple HTML file, that could be sent by email for example."
+
+ "This provides a small table in the command line, that shows most of the data."
+
+ "This provides a file easily handled via other software. By default, it is not formatted for readability."
+
+ "Custom Results"
+ "You can provide a custom reporter instance as part of your configuration in programmatically accessing the framework. It will be called with the complete result after all result modifiers have modified the result."
+
+
+
+ "Usage"
+ "Basic usage information for the framework @idrinth/api-bench"
+ "Usage"
+
+ "Binaries"
+ "The following binaries are available for use via scripts in your package.json."
+
+ "Programmatically"
+ "Basically require main/include main and supply the executor method with required parameters. Tasks defined in src/routes directories before, before_task, before_each, main, after_each, after_task, and after will be used to automatically fill the Job processed by the executor. Automatic filling only happens when there are no tasks provided to the function."
+
+
+
+ "Logging | Usage"
+ "Information about logging usage and support of the framework @idrinth/api-bench"
+ "Logging"
+ "Any logger that either implements the interface or has a wrapper is an option. Wrappers for pino and winston are available."
+
+ "Logging levels used"
+ "Most log entries are debug level, with the major steps being written to info. Trace is currently not used but may be used for detailed argument printing at some point."
+
+ "Custom Logger"
+ "For ease of use, a wrapper is provided as well, that only requires a log method to be implemented."
+ "You can implement the logger interface below and provide any logger you want to next to the already provided ones."
+
+
+
+ "Storage | Usage"
+ "Information about the provided MySQL storage and how to create custom storage implementations for @idrinth/api-bench"
+  "Storage"
+ "Storage classes store each finished set of the run. By default, nothing is stored, but a MySQL storage is provided for those wanting it."
+
+ "Custom Storage"
+ "To provide a custom storage, implement the interface below. The method will be called once per task."
+
+
+
+ "Routes | Usage"
+ "Information about how to create test route definitions with the framework @idrinth/api-bench"
+ "Routes"
+ "Routes are build as configuration objects, that must be default-exported or provided via module.exports and be in a Javascript file. The object is wrapped in a function to allow environment injection, see below for an example."
+
+ "Example"
+ "The code below defines a request to a URL from the environment with GET."
+ "To apply middlewares add both the pre and post properties as shown in the example. Then proceed to pass in your middleware functions to be executed."
+
+quick-
+
+ "Quick Start"
+ "A few steps to quickly get an api-bench project up and running."
+ "@idrinth/api-bench quick start"
+ "Starting out with the framework is not difficult. Follow the next couple steps and you will have your first case ready to run in a few minutes."
+
+ "Requirements"
+ "Make sure that Node.js in a supported version is installed. That means one of the latest two versions. The latest long term support(lts) version is always recommended."
+
+ "Setup"
+ "Run the creation command to create a new benchmark project in a folder within your current working"
+
+ "Case creation"
+ "Go into the newly created project and create a new file at src/routes/main/first-test.ts. Fill it with the following example"
+
+ "First run"
+ "With the following command you can run the example against a public test API to see it in action. Please don't try to create a service denial scenario and keep the thread count low."
+
+
+ "Trying to load fresh content for you, please wait."
+ "Please go online and then refresh the page."
+ "Content has changed, reloading the page for you in a moment."
+
+
+ "or"
+ "This command is deprecated."
+ "Available via the CLI package @idrinth/api-bench-cli and the framework."
+
+ "runs the current working directory's project if the routes folder is properly setup"
+ "Argument threads (default 1)"
+ "Argument repetitions (default 1)"
+ "Argument language code (default en)"
+ "Argument task id, that you want to run only (default all)"
+
+ "creates a new benchmarking project in a directory within the current working directory"
+ "Argument project name ( benchmark)"
+
+ "generates test skeletons from an OpenApi documentation for a project in the current working directory"
+ "Argument path to the OpenApi document"
+
+ "generates test skeletons from an HAR document for a project in the current working directory"
+ "Argument path to the HAR document"
+
+ "checks all routes for possible issues, so there are no surprises, when actually running the code."
+ "Argument language( en)"
+
+ "runs a load test with the given routes up to a limit of threads. Stops when the limit is reached or an error is found during response validation."
+ "Argument threads (default 1)"
+ "Argument repetitions (default 1)"
+ "Argument language code (default en)"
+ "Argument thread increment (default 1)"
+ "Argument maximum threads (default 100)"
+
+ "This command is going to replace all other commands with a  more sensible interface in 3.0.0 and is available from 2.8.0"
+ "runs a benchmark with all options being optional."
+ "runs a content test/integration test with all options being optional."
+ "runs a route verification with all options being optional."
+ "runs a load test with all options being optional."
+ "runs a benchmark with all options being optional."
+ "runs a stress test for the desired duration in seconds with all options being optional."
+
+cookie-
+ "We use cookies"
+ "Settings"
+ "We use cookies to ensure you get the best experience on our website."
+ "Accept"
+ "Decline"

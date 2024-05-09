@@ -1,0 +1,42 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 100
+- package-ecosystem: npm
+  directory: "/framework"
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 100
+- package-ecosystem: npm
+  directory: "/documentation-website"
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 100
+- package-ecosystem: npm
+  directory: "/history-website"
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 100
+- package-ecosystem: npm
+  directory: "/history-microservice"
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 100
+- package-ecosystem: npm
+  directory: "/mindmap"
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 100
+- package-ecosystem: npm
+  directory: "/desktop"
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 100
+- package-ecosystem: npm
+  directory: "/desktop/public"
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 100

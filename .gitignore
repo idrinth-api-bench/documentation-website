@@ -1,0 +1,103 @@
+# ROOT
+/node_modules
+
+# CLI
+/cli/src/**/*.js
+/cli/src/locales
+/cli/node_modules
+/cli/LICENSE
+/cli/.nyc_output
+/cli/coverage
+/cli/dump.txt
+
+# Desktop
+/desktop/src/**/*.js
+/desktop/src/locales
+/desktop/node_modules
+/desktop/LICENSE
+/desktop/.nyc_output
+/desktopcoverage
+/desktop/dump.txt
+/desktop/dist
+/desktop/src/assets/iab.svg
+/desktop/src/assets/favicon.svg
+
+# Framework
+/framework/node_modules
+/framework/result.json
+/framework/result.csv
+/framework/result.html
+/framework/.nyc_output
+/framework/coverage
+/framework/src/**/*.js
+/framework/index.js
+/framework/LICENSE
+/framework/src/locales
+/framework/dump.txt
+
+# Examples
+/examples/**/package-lock.json
+/examples/**/result.json
+/examples/**/result.csv
+/examples/**/result.html
+/examples/**/node_modules
+
+# Documentation Website
+/documentation-website/.nyc_output
+/documentation-website/coverage
+/documentation-website/cypress/screenshots
+/documentation-website/node_modules
+/documentation-website/dist
+/documentation-website/dist-ssr
+/documentation-website/*.local
+/documentation-website/cypress/fixures/cypress.env.json
+/documentation-website/tsconfig.tsbuildinfo
+/documentation-website/src/routes.tsx
+/documentation-website/src/pages/contributing/contributors/code-contributors.json
+/documentation-website/public/sitemap.xml
+/documentation-website/src/locales
+/documentation-website/public/assets/profile-*.jpg
+/documentation-website/public/assets/profile-*.webp
+/documentation-website/public/assets/profile-*.avif
+/documentation-website/public/assets/contributors/*.webp
+/documentation-website/public/assets/contributors/*.avif
+/documentation-website/public/assets/*-*.min.css
+/documentation-website/dump.txt
+/documentation-website/src/assets/iab.svg
+/documentation-website/src/assets/favicon.svg
+/documentation-website/.env
+
+# History Microservice
+/history-microservice/node_modules
+/history-microservice/coverage
+/history-microservice/.env
+
+#History Website
+/history-website/node_modules
+/history-website/dist
+/history-website/coverage
+/history-website/cypress/screenshots
+/history-website/src/locales
+/history-website/dump.txt
+/history-website/src/assets/iab.svg
+/history-website/src/assets/favicon.svg
+
+#Mindmap
+/mindmap/node_modules
+/mindmap/dist
+/mindmap/cache
+/mindmap/src/*.js
+/mindmap/coverage
+/mindmap/assets/iab.svg
+/mindmap/assets/favicon.svg
+
+# Editor directories and files
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+nbproject
+.idea
+.vscode
