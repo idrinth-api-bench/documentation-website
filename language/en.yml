@@ -331,8 +331,8 @@ middlewares:
     encoding:
       title: "JSON and form encode"
       description: "This middleware encodes request bodies automatically and sets the appropriate header."
-      pre: ""
-      post: ""
+      pre: "Here the encoding property on the route gets processed."
+      post: "This is a noop, so no functionality."
     access:
       title: "access token handling"
       description: ""

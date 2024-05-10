@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../../../components/layout.tsx';
 import Lang from '../../../components/lang.tsx';
 import CodeUnit from '../../../components/code-unit.tsx';
-import ListUnit from '../../../components/list-unit.tsx';
+import Middleware from "../../../components/middleware.tsx";
 
 const Middlewares = () => <Layout
   page='middlewares'
@@ -19,21 +19,24 @@ const Middlewares = () => <Layout
       <li>{'#abc -> /path/to/root/src/middlewares/abc.js'}</li>
     </ul>
   </div>
-  <ListUnit text={'middlewares.provided.title'} level={'h2'}>
-    middlewares.provided.encoding
-    middlewares.provided.access
-    middlewares.provided.csrf
-    middlewares.provided.2xx
-    middlewares.provided.403
-    middlewares.provided.404
-    middlewares.provided.user-agent
-    middlewares.provided.cookies
-    middlewares.provided.json
-    middlewares.provided.xml
-    middlewares.provided.silent-server-validator
-    middlewares.provided.success-check
-    middlewares.provided.failure-check
-  </ListUnit>
+  <div className={'card'}>
+    <h3><Lang lnkey={'middlewares.provided.title'}/></h3>
+    <div>
+      <Middleware>encoding</Middleware>
+      <Middleware>access</Middleware>
+      <Middleware>csrf</Middleware>
+      <Middleware>2xx</Middleware>
+      <Middleware>403</Middleware>
+      <Middleware>404</Middleware>
+      <Middleware>user-agent</Middleware>
+      <Middleware>cookies</Middleware>
+      <Middleware>json</Middleware>
+      <Middleware>xml</Middleware>
+      <Middleware>silent-server-validator</Middleware>
+      <Middleware>success-check</Middleware>
+      <Middleware>failure-check</Middleware>
+    </div>
+  </div>
   <CodeUnit
     text={'middlewares.custom.title'}
     language={'typescript'}
