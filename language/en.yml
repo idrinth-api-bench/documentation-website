@@ -346,23 +346,23 @@ middlewares:
     2xx:
       title: "status 2xx check"
       description: ""
-      pre: ""
+      pre: "This is a noop, so no functionality."
       post: ""
     403:
       title: "status 403 check"
       description: ""
-      pre: ""
+      pre: "This is a noop, so no functionality."
       post: ""
     404:
       title: "status 404 check"
       description: ""
-      pre: ""
+      pre: "This is a noop, so no functionality."
       post: ""
     user-agent:
       title: "user-agent"
       description: ""
       pre: ""
-      post: ""
+      post: "This is a noop, so no functionality."
     cookies:
       title: "cookies"
       description: ""
@@ -371,27 +371,27 @@ middlewares:
     json:
       title: "json-validator"
       description: ""
-      pre: ""
+      pre: "This is a noop, so no functionality."
       post: ""
     xml:
       title: "xml-validator"
       description: ""
-      pre: ""
+      pre: "This is a noop, so no functionality."
       post: ""
     silent-server-validator:
       title: "silent-server-validator"
       description: ""
-      pre: ""
+      pre: "This is a noop, so no functionality."
       post: ""
     success-check:
       title: "check response for success"
       description: ""
-      pre: ""
+      pre: "This is a noop, so no functionality."
       post: ""
     failure-check:
       title: "check response for failure"
       description: ""
-      pre: ""
+      pre: "This is a noop, so no functionality."
       post: ""
   custom:
     title: "Custom Middleware"
