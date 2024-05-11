@@ -326,6 +326,7 @@ middlewares:
   description: "Middlewares use an absolute file path to be loaded. The following characters will be used to expand short forms:"
   provided:
     title: "Provided Middlewares"
+    key: "Use the following string to include the middleware:"
     pre: "Preparation step"
     post: "Postprocessing and validation step"
     encoding:
@@ -365,34 +366,34 @@ middlewares:
       post: "This is a noop, so no functionality."
     cookies:
       title: "cookies"
-      description: ""
-      pre: ""
-      post: ""
+      description: "This middleware handles cookies sent via headers."
+      pre: "This function sets all available cookies on the request."
+      post: "This function retrieves all available cookies from the response."
     json:
       title: "json-validator"
-      description: ""
+      description: "This validator checks for valid header and body content."
       pre: "This is a noop, so no functionality."
-      post: ""
+      post: "This will fail if no json was returned."
     xml:
       title: "xml-validator"
-      description: ""
+      description: "This validator checks for valid header and body content."
       pre: "This is a noop, so no functionality."
-      post: ""
+      post: "This will fail if no xml was returned."
     silent-server-validator:
       title: "silent-server-validator"
-      description: ""
+      description: "This middleware tries to help keep servers a bit safer."
       pre: "This is a noop, so no functionality."
-      post: ""
+      post: "If the server discloses information about itself or the language used server-side, this will fail."
     success-check:
       title: "check response for success"
-      description: ""
+      description: "This assumes a json response with a boolean or string status following common standards."
       pre: "This is a noop, so no functionality."
-      post: ""
+      post: "If the success field is not there or not a know positive this will fail."
     failure-check:
       title: "check response for failure"
-      description: ""
+      description: "This assumes a json response with a boolean or string status following common standards."
       pre: "This is a noop, so no functionality."
-      post: ""
+      post: "If the success field is not there or not a know negative this will fail."
   custom:
     title: "Custom Middleware"
     description: "For custom middleware, implement the following interface. Prepare is called before sending a request, process after a request. If an error is thrown in process, any further validations are skipped."
