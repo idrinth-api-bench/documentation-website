@@ -3,7 +3,7 @@ import {
 } from 'vite';
 import react from '@vitejs/plugin-react';
 import attributes from '@babel/plugin-syntax-import-attributes';
-import plugin from '@idrinth/rollup-plugin-react-modular-css';
+import plugin from '@idrinth-api-bench/rollup-plugin-react-modular-css';
 import {
   napiImage,
 } from 'rollup-plugin-napi-image';
