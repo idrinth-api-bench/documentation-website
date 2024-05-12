@@ -20,8 +20,6 @@ on:
       - 'documentation-website/**.cjs'
       - 'documentation-website/package-lock.json'
       - '.github/workflows/documentation-website.lighthouse-check.yml'
-env:
-  CURRENT_NODE_VERSION: ${{ vars.CURRENT_NODE_VERSION || 'latest' }}
 jobs:
   analyze:
     name: Analyze
@@ -38,17 +36,14 @@ jobs:
         languages: javascript-typescript
         queries: security-and-quality
         source-root: documentation-website
-    - name: Setup Node.js environment ${{ env.CURRENT_NODE_VERSION }}
-      uses: actions/setup-node@v4
-      with:
-        node-version: ${{ env.CURRENT_NODE_VERSION }}
-        cache: 'npm'
-        cache-dependency-path: |
-          framework/package-lock.json
-          documentation-website/package-lock.json
-          history-microservice/package-lock.json
-          history-website/package-lock.json
-          cli/package-lock.json
-          package-lock.json
-    - run: cd documentation-website && npm install
-    - run: cd documentation-website && npm run lighthouse
+    - name: Install Nginx
+      run: sudo apt-get update && sudo apt-get install -y nginx
+    - name: Configure Nginx
+      run: |
+        # Replace the default Nginx configuration with your own
+        sudo cp ./nginx.conf /etc/nginx/sites-available/default
+        sudo systemctl restart nginx
+    - name: Run Lighthouse Check
+      run: |
+        cd documentation-website && npm install
+        cd documentation-website && npm run lighthouse
