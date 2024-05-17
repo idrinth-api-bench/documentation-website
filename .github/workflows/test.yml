@@ -64,6 +64,7 @@ on:
               package-lock.json
         - run: npm ci
         - run: npm run build
+        - run: npm run e2e
         - name: Coveralls
           uses: coverallsapp/github-action@master
           with:
