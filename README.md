@@ -6,7 +6,7 @@ Website made using React to show the ideas behind the API benchmark implementati
 
 ## Installation
 
-###  Important 
+### Read before installing
 
 You must have a github token set in your account in order to be able to contribute to this project. If you try to contribute without one, you won't be able to since the github api will limit your access.
 
