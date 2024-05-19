@@ -16,7 +16,7 @@ Github tokens are identifiers that you can set with specific rights(as in power 
 
 ### How do I get a token?
 
-1) Click your profile picture in the github website after logging in.
+1) Click your profile picture on the GitHub website after logging in.
 2) In the menu that will appear, click on `settings`.
 3) Now, on the Settings screen, scroll down to the very bottom of the page and click on `<>Developer settings`.
 4) Once you're there, click on `Personal access tokens`.
