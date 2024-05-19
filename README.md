@@ -25,8 +25,8 @@ Github tokens are identifiers that you can set with specific rights(as in power 
 7) Now, we're on the token creation process. Don't worry, nothing can go wrong here.  You can add a note to your token as a reminder to what it was created for, in case this token will be used in the future.
 8) You can set an expiration time for your token for extra safety if you must, but that's up for personal preference.
 9) Now, specifically for this repository, your token must have **only** two permissions:
-  - [X] public_repo
-  - [X] read:org
+- [X] public_repo
+- [X] read:org
 10) Now, click on `Generate token`.
 11) We're almost there: you're now facing your token. Copy that, you'll need it in a second.
 12) Now, either create or find a file called `.env`.
