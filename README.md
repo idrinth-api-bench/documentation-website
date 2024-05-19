@@ -30,13 +30,16 @@ Github tokens are identifiers that you can set with specific rights(as in power 
 10) Now, click on `Generate token`.
 11) We're almost there: you're now facing your token. Copy that, you'll need it in a second.
 12) Now, either create or find a file called `.env`.
-13) Inside that file, create or change the value of the variable `GITHUB_API_TOKEN` to the value of your token, like this: 
+13) Inside that file, create or change the value of the variable `GITHUB_API_TOKEN` to the value of your token, like this:
+
 ```ini
 GITHUB_API_TOKEN=gh_api_token_with_read_org_and_read_repo
 ```
+
 14) Now you can install the dependencies by typing the installation command.
 
 ### Installation command
+
 ```bash
 npm ci
 ```
