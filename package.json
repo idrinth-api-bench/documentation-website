@@ -28,7 +28,7 @@
     "lint-styles": "stylelint src/index.scss src/**/**/*.scss",
     "lint-css": "ilcd",
     "lint-md": "markdownlint *.md",
-    "postinstall": "irfbrgr && npm run build",
+    "postinstall": "irfbrgr && npm run language && npm run simple-git-hooks",
     "routes": "irfbrgr",
     "contributors": "node tools/load-contributors.js",
     "language": "itlfy generate",
@@ -36,6 +36,9 @@
     "drop-dist": "node tools/drop-dist.js",
     "spellcheck": "itlfy dump && spellchecker",
     "knip": "knip",
+    "commitlint-ci": "commitlint --last",
+    "commitlint": "commitlint --edit",
+    "simple-git-hooks": "simple-git-hooks",
     "lighthouse": "npm run build && start-server-and-test serve http://localhost:8080 'node tools/lighthouse-report.js'"
   },
   "dependencies": {
@@ -55,6 +58,7 @@
   "devDependencies": {
     "@babel/plugin-syntax-import-attributes": "^7.24.1",
     "@cypress/code-coverage": "^3.12.39",
+    "@commitlint/cli": "^19.2.1",
     "@idrinth/duplicate-style-check": "^1.1.0",
     "@idrinth/react-file-based-routes": "^1.2.16",
     "@idrinth-api-bench/rollup-plugin-react-modular-css": "^1.2.2",
@@ -88,6 +92,7 @@
     "@napi-rs/image": "^1.9.2",
     "spellchecker-cli": "^6.2.0",
     "start-server-and-test": "^2.0.3",
+    "simple-git-hooks": "^2.11.1",
     "stylelint": "^16.2.1",
     "stylelint-config-standard": "^36.0.0",
     "ts-node": "^10.9.1",

@@ -1,0 +1,30 @@
+name: spellcheck
+on:
+  push:
+    branches:
+    - the-one
+    paths:
+    - 'language/en.yml'
+    - '.github/workflows/spellcheck.yml'
+    - '.dictionary.txt'
+  pull_request:
+    branches:
+    - the-one
+    paths:
+      - 'language/en.yml'
+      - '.github/workflows/spellcheck.yml'
+      - '.dictionary.txt'
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: latest
+          cache: 'npm'
+          cache-dependency-path: |
+            package-lock.json
+      - run: npm ci
+      - run: npm run spellcheck
