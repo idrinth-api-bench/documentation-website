@@ -34,29 +34,31 @@ const YoutubeContent = ({
     allowed,
     setAllowed,
   ] = useState<boolean>(get('youtube',),);
-  if (! allowed) {
-    document.body.addEventListener('consentChanged', (event,) => {
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      // @ts-expect-error
+  if (!allowed) {
+    const consentChangedHandler = (event: CustomEvent,) => {
       if (event?.detail?.key === 'youtube') {
+        setAllowed(event?.detail?.value ?? false,);
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-expect-error
-        setAllowed(event?.detail?.value ?? false,);
+        document.body.removeEventListener('consentChanged', consentChangedHandler)
       }
-    },);
+    }
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-expect-error
+    document.body.addEventListener('consentChanged', consentChangedHandler,);
     return <YoutubeLink>{children}</YoutubeLink>;
   }
-  const EL = lazy(async() => {
+  const EL = lazy(async () => {
     const title = await t('youtube.player',);
     const id = 'youtube_' + children;
     const setHeightOnLoad = () => {
       const element = document.getElementById(id,);
-      if (! element) {
+      if (!element) {
         return;
       }
       const computed = getComputedStyle(element,);
       const widthString = computed.getPropertyValue('width',);
-      const width= Number.parseFloat(
+      const width = Number.parseFloat(
         widthString.substring(
           STRING_START,
           widthString.length - STRING_PX_OFFSET,
@@ -65,14 +67,14 @@ const YoutubeContent = ({
       const factor = YOUTUBE_DEFAULT_HEIGHT / YOUTUBE_DEFAULT_WIDTH;
       element.setAttribute(
         'height',
-        `${ Math.ceil(width * factor,) }`,
+        `${Math.ceil(width * factor,)}`,
       );
     };
     return {
       default: () => <>
         <iframe
           id={id}
-          src={`https://www.youtube-nocookie.com/embed/${ children }`}
+          src={`https://www.youtube-nocookie.com/embed/${children}`}
           title={title}
           allow={allow.join(';',)}
           onLoad={setHeightOnLoad}
@@ -83,7 +85,7 @@ const YoutubeContent = ({
     };
   },);
   return <Suspense fallback={<YoutubeLink>{children}</YoutubeLink>}>
-    <EL/>
+    <EL />
   </Suspense>;
 };
 
