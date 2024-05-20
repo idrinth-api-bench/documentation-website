@@ -45,5 +45,5 @@ jobs:
         sudo systemctl restart nginx
     - name: Run Lighthouse Check
       run: |
-        cd documentation-website && npm install
-        cd documentation-website && npm run lighthouse
+        npm ci
+        npm run lighthouse
