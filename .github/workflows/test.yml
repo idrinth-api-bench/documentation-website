@@ -38,6 +38,7 @@ jobs:
             package-lock.json
       - run: npm ci
       - run: npm run language
+      - run: npm run contributors
       - run: npm run test
       - name: Coveralls
         uses: coverallsapp/github-action@master
@@ -50,11 +51,11 @@ jobs:
     strategy:
       matrix:
         part:
+          - 0
           - 1
           - 2
           - 3
           - 4
-          - 5
     steps:
       - uses: actions/checkout@v4
       - name: Use Node.js
