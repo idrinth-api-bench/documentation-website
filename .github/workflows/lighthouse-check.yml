@@ -1,0 +1,39 @@
+name: lighthouse check
+on:
+  push:
+    branches:
+    - the-one
+    paths:
+      - '**.ts'
+      - '**.tsx'
+      - '**.js'
+      - 'package-lock.json'
+      - '.github/workflows/lighthouse-check.yml'
+  pull_request:
+    branches:
+    - the-one
+    paths:
+      - '**.ts'
+      - '**.tsx'
+      - '**.js'
+      - 'package-lock.json'
+      - '.github/workflows/lighthouse-check.yml'
+jobs:
+  analyze:
+    name: Analyze
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    permissions:
+      security-events: write
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v4
+      with:
+        node-version: latest
+        cache: 'npm'
+        cache-dependency-path: |
+          package-lock.json
+    - run: npm install
+    - run: npm run lighthouse

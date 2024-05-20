@@ -1,0 +1,48 @@
+name: CodeQL
+on:
+  push:
+    branches:
+    - the-one
+    paths:
+      - '**.ts'
+      - '**.tsx'
+      - '**.js'
+      - 'package-lock.json'
+      - '.github/workflows/codeql.yml'
+  pull_request:
+    branches:
+    - the-one
+    paths:
+      - '**.ts'
+      - '**.tsx'
+      - '**.js'
+      - 'package-lock.json'
+      - '.github/workflows/codeql.yml'
+jobs:
+  analyze:
+    name: Analyze
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    permissions:
+      security-events: write
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    - name: Initialize CodeQL
+      uses: github/codeql-action/init@v3
+      with:
+        languages: javascript-typescript
+        queries: security-and-quality
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v4
+      with:
+        node-version: latest
+        cache: 'npm'
+        cache-dependency-path: |
+          package-lock.json
+    - run: npm ci
+    - run: npm run language
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v3
+      with:
+        category: "/language:javascript-typescript"

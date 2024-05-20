@@ -7,4 +7,4 @@ plugins:
 - repeated-words
 quiet: true
 dictionaries:
-- ../.dictionary.txt
+- .dictionary.txt

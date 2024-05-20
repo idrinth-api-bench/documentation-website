@@ -1,0 +1,35 @@
+name: Knip
+on:
+  push:
+    branches:
+    - the-one
+    paths:
+    - 'documentation-website/**.ts'
+    - 'documentation-website/**.tsx'
+    - 'documentation-website/**.js'
+    - 'documentation-website/**.json'
+    - '.github/workflows/knip.yml'
+  pull_request:
+    branches:
+    - the-one
+    paths:
+      - 'documentation-website/**.ts'
+      - 'documentation-website/**.tsx'
+      - 'documentation-website/**.js'
+      - 'documentation-website/**.json'
+      - '.github/workflows/knip.yml'
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: latest
+          cache: 'npm'
+          cache-dependency-path: |
+            package-lock.json
+      - run: npm ci
+      - run: npm run language
+      - run: npm run knip
