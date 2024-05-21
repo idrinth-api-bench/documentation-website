@@ -16,6 +16,8 @@
 /public/assets/profile-*.avif
 /public/assets/contributors/*.webp
 /public/assets/contributors/*.avif
+/public/assets/tools/*.webp
+/public/assets/tools/*.avif
 /public/assets/*-*.min.css
 /dump.txt
 /.env

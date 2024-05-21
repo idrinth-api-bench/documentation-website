@@ -17,7 +17,7 @@
   "scripts": {
     "start": "npm run build && npm run serve",
     "dev": "irfbrgr && vite",
-    "build": "npm run drop-dist && npm run routes && npm run language && npm run contributors && vite build && irfbrgf",
+    "build": "npm run drop-dist && npm run routes && npm run language && npm run contributors && npm run tools && vite build && irfbrgf",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "lint-fix": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --fix",
     "preview": "vite preview",
@@ -31,6 +31,7 @@
     "postinstall": "irfbrgr && npm run language && npm run simple-git-hooks",
     "routes": "irfbrgr",
     "contributors": "node tools/load-contributors.js",
+    "tools": "node tools/prepare-tools.js",
     "language": "itlfy generate",
     "check-language": "itlfy check",
     "pure-build": "npm run drop-dist && vite build && irfbrgf",

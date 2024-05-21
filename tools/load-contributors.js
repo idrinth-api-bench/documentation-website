@@ -8,7 +8,9 @@ import {
 import crypto from 'crypto';
 import {
   CONTRIBUTOR_PAGE_SIZE,
+  MAX_PROFILE_SIZE,
   ORGANIZATION_REPOS_URL,
+  WEBP_QUALITY,
 } from './constants.js';
 import {
   Transformer,
@@ -18,7 +20,6 @@ import dotenv from 'dotenv';
 const defaultBio = 'An awesome person helping others in their time off work, ' +
   'but who doesn\'t yet have a personalized bio.';
 const MILLISECONDS_PER_DAY = 86400000;
-const WEBP_QUALITY = 90;
 const users = {};
 const FILE = './src/pages/contributing/contributors/code-contributors.json';
 
@@ -78,7 +79,9 @@ if (! process.env.CI) {
     };
     const jpeg = Buffer.from(
       new Uint8Array(
-        await (await fetch(user.avatar_url,)).arrayBuffer(),
+        await (await fetch(
+          user.avatar_url + '?s=' + MAX_PROFILE_SIZE,
+        )).arrayBuffer(),
       ),
     );
     const transformer = new Transformer(jpeg,);
@@ -143,6 +146,7 @@ for (const file of readdirSync('./public/assets/contributors', 'utf8',)) {
     const transformer = new Transformer(
       readFileSync('./public/assets/contributors/' + file,),
     );
+    transformer.resize(MAX_PROFILE_SIZE, MAX_PROFILE_SIZE,);
     writeFileSync(
       './public/assets/contributors/' + file.replace(/jpg$/u, 'webp',),
       transformer.webpSync(WEBP_QUALITY,),
