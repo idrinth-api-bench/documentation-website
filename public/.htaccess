@@ -4,6 +4,8 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule .* /index.html [L]
 
+FileETag Size Digest
+
 ExpiresActive On
 ExpiresDefault "access"
 ExpiresByType image/gif "access plus 1 year"
@@ -16,7 +18,6 @@ ExpiresByType text/css "access plus 1 year"
 FilterDeclare COMPRESS
 FilterProvider COMPRESS DEFLATE "%{Content_Type} -strmatch 'text/*'"
 FilterProvider COMPRESS DEFLATE "%{Content_Type} -strmatch 'img/svg+xml*'"
-FilterProvider COMPRESS DEFLATE "%{Content_Type} -strmatch 'text/css*'"
 FilterProvider COMPRESS DEFLATE "%{Content_Type} -strmatch 'application/json*'"
 FilterChain COMPRESS
 FilterProtocol COMPRESS DEFLATE change=yes;byteranges=no
