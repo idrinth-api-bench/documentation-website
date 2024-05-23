@@ -1,5 +1,6 @@
 import React from 'react';
 import Lang from './lang.tsx';
+import './tool.scss';
 import languageKey from '../locales/language-key.ts';
 
 interface ToolType {
@@ -10,21 +11,16 @@ interface ToolType {
 const Tool = ({
   name,
   link,
-}: ToolType,) => <div>
+}: ToolType,) => <div className={'tool'}>
   <a
     href={link}
     target='_blank'
     rel='noreferrer'
   >
-    <h3><Lang lnkey={`tools.${ name }.title` as languageKey}/></h3>
-    <picture>
-      <source srcSet={`/assets/tools/${ name }.avif`} type="image/avif"/>
-      <source srcSet={`/assets/tools/${ name }.webp`} type="image/webp"/>
-      <img src={`/assets/tools/${ name }.png`} alt={name}/>
-    </picture>
+    <h3>{name}</h3>
   </a>
   <p>
-    <Lang lnkey={`tools.${ name }.description` as languageKey}/>
+    <Lang lnkey={`tools.${ name }` as languageKey}/>
   </p>
 </div>;
 
