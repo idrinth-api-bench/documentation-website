@@ -7,13 +7,13 @@ RewriteRule .* /index.html [L]
 FileETag Size Digest
 
 ExpiresActive On
-ExpiresDefault "access"
 ExpiresByType image/gif "access plus 1 year"
 ExpiresByType image/png "access plus 1 year"
 ExpiresByType image/jpeg "access plus 1 year"
 ExpiresByType text/javascript "access plus 1 year"
 ExpiresByType image/svg+xml "access plus 1 year"
 ExpiresByType text/css "access plus 1 year"
+ExpiresDefault "access"
 
 FilterDeclare COMPRESS
 FilterProvider COMPRESS DEFLATE "%{Content_Type} -strmatch 'text/*'"
