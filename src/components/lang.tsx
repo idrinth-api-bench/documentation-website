@@ -22,6 +22,6 @@ const Lang = ({
       default: () => <>{ text }</>,
     };
   },);
-  return <Suspense fallback={''}><LE/></Suspense>;
+  return <Suspense fallback={lnkey}><LE/></Suspense>;
 };
 export default Lang;
