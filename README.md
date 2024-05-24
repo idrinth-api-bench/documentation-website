@@ -45,7 +45,8 @@ npm ci
 ```
 
 ## Running the app
-If you encounter any problems with this, try checking the `Token tutorial` right above this section.
+If you encounter any problems with this, try checking the [Token tutorial](#how-do-i-get-a-token) right above this section.
+
 
 ```bash
 # development watch mode
