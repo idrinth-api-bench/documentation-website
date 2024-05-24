@@ -105,3 +105,491 @@ faq:
     title_6: "Gibt es zusätzliches Unterrichtsmaterial?"
     description_6: "Noch nicht, es wird aktiv daran gearbeitet."
     title_7: "Ist die Nutzung des Frameworks kostenlos?"
+title_2: "Was ist ein Lasttest?"
+    description_2: "Beim Lasttest wird das Systemverhalten unter Spitzenlastbedingungen oder erwarteten Lastbedingungen bewertet."
+    title_3: "Wie lange dauert es, einen Test zu schreiben?"
+    description_3: "Die durchschnittliche Zeit zum Schreiben eines Tests beträgt 2-3 Minuten. Für Anfänger sind es etwa 15 Minuten."
+    title_4: "Wie lange dauert die Einrichtung?"
+    description_4: "Wenn Sie dem Schnellstart folgen, dauert es nur wenige Minuten!"
+    title_5: "Ist das Projekt produktiv im Einsatz?"
+    description_5: "Ja, das schon die meiste Zeit seines Lebens."
+    title_6: "Gibt es zusätzliches Unterrichtsmaterial?"
+    description_6: "Noch nicht, es wird aktiv daran gearbeitet."
+    title_7: "Ist die Nutzung des Frameworks kostenlos?"
+    description_7: "Ja, ganz und gar. Sogar der Support über GitHub ist kostenlos."
+    title_8: "Wie schnell erfolgt die öffentliche Unterstützung?"
+    description_8: "Wir bemühen uns, innerhalb von 24 Stunden und spätestens innerhalb von 48 Stunden zu reagieren."
+
+imprint:
+  meta:
+    title: "Impressum"
+    description: "Impressum und Datenschutzerklärung für diese Website"
+
+sponsors:
+  meta:
+    title: "Sponsoren | Mitwirken"
+    description: "Die folgenden Unternehmen unterstützen die Entwicklung von API-Bench durch die Bereitstellung von Zeit, Geld oder notwendigen Werkzeugen."
+  title: "Sponsoren"
+  description: "Die folgenden Unternehmen unterstützen die Entwicklung von @idrinth/api-bench. Das bedeutet, dass sie Zeit, Geld oder notwendige Werkzeuge für die Entwicklung bereitstellen."
+  bjoernbuettner:
+    intro: "Björn Büttner ist ein in Deutschland ansässiges Unternehmen, das maßgeschneiderte Entwicklungs- und Hosting-Dienste im Web-Kontext anbietet. Darüber hinaus werden Schulungen und Beratungen angeboten, die auch dieses Projekt zur Leistungsüberwachung umfassen."
+    sponsoring: "Das Unternehmen unterstützt das Projekt durch das kostenlose Hosten dieser Dokumentationsseite und die Bereitstellung der Domain."
+  jungwild:
+    intro: "jungwild ist eine in Deutschland ansässige Personalvermittlungsagentur, die das Framework zum Testen ihrer eigenen APIs nutzt."
+    sponsoring: "Die Agentur stellt vor der Veröffentlichung etwas Zeit zum Testen und Entwickeln von Änderungen des Frameworks zur Verfügung."
+
+contributors:
+  meta:
+    title: "Mitwirkende | Mitwirken"
+    description: "Dies sind die Menschen, die die Website und das Framework zu dem gemacht haben, was sie heute sind."
+  title: "Mitwirkende"
+  description: "Ein großes Dankeschön an alle, die dazu beigetragen haben. Unten sind diejenigen aufgeführt, die Code beigesteuert haben, aber auch andere Beiträge sind ebenso wertvoll"
+  code_contributors: "Code-Mitwirkende"
+  none_code_contributors: "Keine Code-Mitwirkenden"
+
+support:
+  meta:
+    title: "Unterstützung"
+    description: "Unterstützungsoptionen für das @idrinth/api-bench-Framework."
+  title: "Unterstützung"
+  description: "Egal wer Sie sind, Sie können über GitHub-Probleme und -Diskussionen Unterstützung erhalten. Die Reaktionszeiten des Supports hängen von der Verfügbarkeit der Freiwilligen ab und können daher ein bis zwei Tage dauern."
+  commercial:
+    title: "Kommerzielle Unterstützung"
+    description: "Wenn Ihre Closed-Source-Software Support benötigt, der nicht über die oben genannten Möglichkeiten abgewickelt werden kann, bietet Björn Büttner auch kostenpflichtigen Support auf Geschäftsbasis an. Sie erreichen das Unternehmen über:"
+  training:
+    title: "Professionelles Training"
+    description: "Die Schulung erfolgt durch Björn Büttner auf betriebswirtschaftlicher Basis für Organisationen. Für Preise und Termine kontaktieren Sie das Unternehmen unter:"
+
+404:
+  meta:
+    title: "404 NOT FOUND"
+    description: "Die gewünschte Seite wurde nicht gefunden"
+  title: "404 Not Found"
+  description: "Die gewünschte Seite wurde nicht gefunden"
+
+contributing:
+  meta:
+    title: "Mitwirken"
+    description: "Beitragsrichtlinien für das Framework @idrinth/api-bench"
+  title: "Mitwirkende Richtlinien"
+  description: "Jeder Beitrag ist willkommen."
+  youtube: "Strukturübersicht auf YouTube"
+  structure:
+    title: "Struktur"
+    description: "Das Projekt ist ein Mono-Repo, das in mehrere Unterprojekte gruppiert ist, zum Beispiel „documentation-website“, „framework“, „history-microservice“, „CLI“, „mindmap“, „history-website“. Detailliertere Anweisungen für den jeweiligen Teil finden Sie in der Readme-Datei des entsprechenden Ordners."
+  issues:
+    title: "Probleme"
+    description: "Jede Idee und jeder Fehlerbericht gilt als Beitrag. Sie tragen nicht nur zur Verbesserung der Codebasis bei, sondern helfen auch anderen, dieses Framework besser zu nutzen. Bitte versuchen Sie, sich an das Format der vordefinierten Problemtypen zu halten, um die Filterung und Bearbeitung für jeden, der sich für das Thema interessiert, zu erleichtern."
+  code:
+    title: "Code"
+    style: "Die Stilrichtlinien werden über eslint bereitgestellt. Bitte versuchen Sie, den Code hinsichtlich der Lesbarkeit zu optimieren, da Code viel häufiger gelesen als geändert wird."
+    breaking: "Denken Sie beim Hinzufügen von Funktionen daran, vorhandene Schnittstellen, Einstiegspunkte und Funktionen nur dann zu unterbrechen, wenn dies unbedingt erforderlich ist."
+    picking:
+      title: "Das richtige Thema auswählen"
+      labels: "Probleme, die für relativ neue Programmierer geeignet sind, werden als „Gute erste Ausgabe“ markiert, Probleme, die als „Hilfe gesucht“ gekennzeichnet sind, erfordern etwas mehr Wissen über das Projekt."
+      project: "Innerhalb eines Problems finden Sie die Projektinformationen auf der rechten Seite. Wenn Sie diese öffnen, werden weitere Schätzungen zu Größe, Schwierigkeit, Priorität und dem wichtigsten betroffenen Projektteil angezeigt"
+    workflow:
+      title: "Beitragsworkflow"
+      list_item_1: "Forken Sie das Repository"
+      list_item_2: "Erwähnen Sie in der Ausgabe, dass Sie daran arbeiten (es wird dann für ein paar Wochen vergeben)"
+      list_item_3: "Erstellen Sie einen Feature-Zweig (issue-xxx-does-something) aus dem-one"
+      list_item_4: "Erstellen Sie einen Pull-Request-Entwurf"
+      list_item_5: "Erwähnen Sie die Fehlerbehebungen #xxx in der Beschreibung"
+      list_item_6: "Nehmen Sie Ihre Änderungen an der Filiale vor"
+      list_item_7: "Überprüfen Sie, ob alle Aktionen grün sind"
+      list_item_8: "Als zur Überprüfung bereit markieren"
+      list_item_9: "Lassen Sie Änderungen überprüfen"
+      list_item_10: "Wenn die Bewertung positiv ausfällt, werden die Änderungen zusammengeführt, andernfalls behoben und zur Überprüfung zurückgesendet"
+    translation:
+      title: "Übersetzung"
+      setup: "Wenn Sie Übersetzungen testen möchten, gibt es im Projektstamm eine automatische Neuerstellung:"
+      path: "Sprachen finden Sie im jeweiligen Projektordner."
+      example: "Beispiel:"
+      youtube: "YouTube-Tutorial zur Übersetzung"
+    mindmap:
+      title: "Mindmap"
+      youtube: "Kurzes Mindmap-YouTube-Tutorial"
+      introduction: "Es ist erwünscht, zur Mindmap beizutragen. Die Mindmap wird aus data.yml in /mindmap erstellt und folgt dem folgenden Schema:"
+      nodes: "Um Knoten anzuzeigen, müssen diese über eine Texteigenschaft verfügen. Möglicherweise haben sie auch; eine URL, eine Beschreibung und untergeordnete Knoten."
+    tests:
+      title: "Tests"
+      description: "Das Testen von neuem Code wird erwartet und das Hinzufügen von Tests oder das Verbessern von Tests für alten Code wird geschätzt. Das Ziel besteht darin, die meisten Probleme entweder durch statische Analyse oder Unit- und Integrationstests zu finden."
+      manual:
+        title: "Manuelle Tests"
+        description: "Für manuelle Tests können Sie „npm run coai“ im Quellordner ausführen, um alle zum Testen erforderlichen Dateien automatisch auszuchecken und zu installieren."
+      locally:
+        title: "Lokales Ausführen von Tests"
+        description: "Um eine Liste der verfügbaren CI-Aufgaben und der entsprechenden Befehle zum lokalen Ausführen anzuzeigen, können Sie „npm run local“ im Quellordner ausführen. Dies ist besonders nützlich, um bestimmte CI-Aufgaben zu testen, bevor Sie Ihre Änderungen übernehmen."
+    naming:
+      title: "Regeln der Namensgebung"
+      list_item_1: "camelCase für Variablen und Funktionen"
+      list_item_2: "UPPER_SNAKE_CASE für Konstanten"
+      list_item_3: "PascalCase für Schnittstellen und Klassen"
+      list_item_4: "Kebab-Fall für Dateinamen"
+    requirements:
+      title: "Anforderungen"
+      node: "Eine der letzten beiden Knotenversionen ist erforderlich."
+      os:  "Unterstützte Betriebssysteme: Linux, Windows und macOS."
+    setup:
+      title: "Setup"
+      description: "Führen Sie die folgenden Befehle aus, um das vollständige Projekt zu erstellen:"
+    commits:
+      title: "Richtlinien für Commit-Nachrichten"
+      preface: "*Diese Spezifikation basiert auf den Richtlinien für Angular-Commit-Nachrichten."
+      introduction: "Dies sind die Regeln dafür, wie Git-Commit-Nachrichten für API-Bench formatiert werden sollten. Dieses Format führt zu einem leichter lesbaren Commit-Verlauf."
+      parts: "Jede Commit-Nachricht besteht aus einer Kopfzeile, einem Textkörper und einer Fußzeile."
+      header:
+        title: "Nachrichtenkopf festschreiben"
+        format: "Header müssen dem folgenden Format entsprechen:"
+        description: "Der Header ist obligatorisch und sollte dem Commit Message Header-Format entsprechen."
+        type:
+          title: "Type"
+          description: "Die Liste der unterstützten Typen:"
+          list_item_1: "Build: Änderungen, die sich auf das Build-System oder externe Abhängigkeiten auswirken"
+          list_item_2: "ci: Änderungen an CI-Konfigurationsdateien und Skripten"
+          list_item_3: "Dokumente: Dokumentationsänderungen"
+          list_item_4: "Feature: Eine neue Funktion"
+          list_item_5: "fix: Eine Fehlerbehebung"
+          list_item_6: "perf: Eine Codeänderung, die die Leistung verbessert"
+          list_item_7: "Refactor: Eine Codeänderung, die weder einen Fehler behebt noch eine Funktion hinzufügt"
+          list_item_8: "Test: Fehlende Tests hinzufügen oder vorhandene Tests korrigieren"
+        scope:
+          title: "Umfang"
+          description: "Der Geltungsbereich sollte der Name des betroffenen Teils des Projekts sein. Die Liste der unterstützten Bereiche:"
+          list_item_1: "Rahmen"
+          list_item_2: "Webseite"
+          list_item_3: "History-Microservice"
+          list_item_4: "Geschichts-Website"
+          list_item_5: "Docker-Dateien"
+          list_item_6: "Beispiele"
+        summary:
+          title: "Zusammenfassung"
+          description: "Das Zusammenfassungsfeld sollte eine prägnante Beschreibung der Änderung enthalten."
+          list_item_1: "Verwenden Sie den Imperativ, die Gegenwartsform"
+          list_item_2: "Schreiben Sie den ersten Buchstaben nicht groß"
+          list_item_3: "kein Punkt (.) am Ende"
+      body:
+        title: "Nachrichtentext festschreiben"
+        description: "Der Körper ist für alle Commits obligatorisch. Sie sollten dem Format „Commit Message Body“ entsprechen."
+        content: "Der Körper ist für alle Commits obligatorisch. Sie sollten dem Format „Commit Message Body“ entsprechen."
+        time: "Verwenden Sie wie in der Zusammenfassung den Imperativ und die Gegenwartsform."
+      footer:
+        title: "Fußzeile der Commit-Nachricht"
+        description: "Die Fußzeile ist optional. Das Commit Message Footer-Format beschreibt, wofür die Fußzeile verwendet wird und welche Struktur sie haben muss."
+        content: "Die Fußzeile kann Informationen zu Breaking Changes und Deprecations enthalten und ist auch der Ort, an dem auf GitHub-Probleme und andere Pull-Requests verwiesen wird, die dieser Commit schließt oder mit denen er in Zusammenhang steht."
+        breaking: "Im Falle von Breaking Changes und Deprecations sollte der Abschnitt mit dem Satz „BREAKING CHANGE:“ oder „DEPRECATED:“ beginnen, gefolgt von einer Beschreibung. Zum Beispiel:"
+      complete:
+        title: "Vollständiges Commit"
+        description: "Hier finden Sie ein vollständiges Beispiel für eine korrekte Commit-Nachricht:"
+      reverts:
+        title: "Commits zurücksetzen"
+        description: "Wenn der Commit einen vorherigen Commit rückgängig macht, sollte er mit „revert:“ beginnen, gefolgt vom Header des zurückgesetzten Commits."
+        content: "Der Inhalt des Commit-Nachrichtentexts sollte Folgendes enthalten:"
+        list_item_1: "ID des Commits, der zurückgesetzt wird, im folgenden Format: „Dadurch wird Commit <SHA> zurückgesetzt.“"
+        list_item_2: "eine klare Beschreibung des Grundes für das Zurücksetzen der Commit-Nachricht."
+    pull_requests:
+      title: "Pull-Anfragen"
+      description: "Bitte öffnen Sie Ihre Pull-Anfragen im Entwurfsmodus. Wenn Sie zur Überprüfung bereit sind, entfernen Sie den Entwurf. Gehen Sie nicht mit Gewalt vor, das verursacht nur zusätzliche Arbeit."
+  documentation:
+    title: "Dokumentation"
+    description: "Dokumentation ist ein unterschätzter Teil jeder Software. Das Hinzufügen von Erläuterungen, Beispielen oder Verbesserungen jeglicher Art wird sehr geschätzt und gefördert. Diejenigen, die die Dokumentation schreiben, sind die stillen Helden der Open- und Closed-Source-Software."
+  examples:
+    title: "Beispiele"
+    description: "Bitte beachten Sie bei Beispielen, dass wir keine API überlasten möchten. Verwenden Sie keine Hochlastaufgaben und keine APIs, die nicht für die öffentliche Nutzung bestimmt sind. Von den Beispielen wird erwartet, dass sie ausgeführt werden, ohne dass jemand, auch Dritte, Schaden nimmt."
+license:
+  meta:
+    title: "Lizenz"
+    description: "Das Framework @idrinth/api-bench ist unter der MIT-Lizenz verfügbar"
+
+autowiring:
+  meta:
+    title: "Automatische Verkabelung | Verwendung"
+    description: "Das Framework @idrinth/api-bench kann Umgebungsvariablen automatisch in Routendefinitionen einbinden"
+  title: "Autowiring-Routenparameter"
+  limitations: "Kommentartypen werden Standardwerttypen immer übertreffen. Wenn diese beiden nicht übereinstimmen, erhalten Sie möglicherweise seltsame Ergebnisse. Leider können einige Dinge nicht erledigt werden."
+  conversion: "Typen werden automatisch angewendet, wenn entweder ein Standardwert zum Abrufen des Typs vorhanden ist oder ein Kommentar wie der Parameter „/* boolean */“ vor dem Parameter hinzugefügt wird."
+  parameters: "Parameter enthaltener Funktionen werden mit Umgebungsvariablenwerten des jeweiligen Namens gefüllt (aBc -> A_BC)."
+  limitation:
+    title: "Limitations"
+    constants: "Verwenden Sie keine Konstanten als Standardwerte, da diese nicht ordnungsgemäß analysiert werden können und einen Fehler auslösen."
+    objects: "Verwenden Sie keine Arrays oder Objekte als Standardwerte, da diese nicht automatisch verknüpft werden können."
+    destructuring: "Destrukturierung wird nicht unterstützt."
+    mixed: "Standardwerttypen sind NICHT vom gleichen Typ wie der Parameter."
+  example:
+    title: "Beispiel"
+    description: "Hier verdrahten wir drei Umgebungsvariablen automatisch als String, um die Wiederverwendung der Route zu vereinfachen."
+
+middlewares:
+  meta:
+    title: "Middleware | Verwendung"
+    description: "Das Framework @idrinth/api-bench stellt Standard-Middlewares bereit und ermöglicht benutzerdefinierte Middlewares"
+  title: "Middleware"
+  description: "Middlewares verwenden zum Laden einen absoluten Dateipfad. Die folgenden Zeichen werden zur Erweiterung von Kurzformen verwendet:"
+  provided:
+    title: "Bereitgestellte Middlewares"
+    key: "Verwenden Sie die folgende Zeichenfolge, um die Middleware einzubinden:"
+    pre: "Vorbereitungsschritt"
+    post: "Nachbearbeitungs- und Validierungsschritt"
+    encoding:
+      title: "JSON und Formularkodierung"
+      description: "Diese Middleware kodiert Anforderungstexte automatisch und legt den entsprechenden Header fest."
+      pre: "Hier wird die Codierungseigenschaft der Route verarbeitet."
+      post: "Das ist ein Noop, also keine Funktionalität."
+    access:
+      title: "Umgang mit Zugriffstoken"
+      description: "Dies verarbeitet Inhabertoken, einschließlich des Abrufs von JWTs und der Festlegung in einer gemeinsamen Antwortstruktur."
+      pre: "Fügt ein Zugriffstoken hinzu, wenn es als Bearer-Token verfügbar ist."
+      post: "Versucht, ein Zugriffstoken aus einer JSON-Antwort abzurufen. Es verfügt über mehrere Fallbacks, um gängige Benennungsschemata abzudecken."
+    csrf:
+      title: "Umgang mit CSRF-Headern"
+      description: "Diese Middleware verarbeitet auf übliche Weise erstellte Cross-Site-Request-Forgery-Token."
+      pre: "Dadurch wird ein CSRF-Header hinzugefügt, wenn Daten dafür abgerufen wurden."
+      post: "Dadurch wird versucht, ein neues CSRF-Token aus der Antwort abzurufen. Möglicherweise werden nicht alle erfasst, da die Implementierungen sehr unterschiedlich sind."
+    2xx:
+      title: "Status 2xx prüfen"
+      description: "Dies ist ein Validator für den HTTP-Statuscode."
+      pre: "Das ist ein Noop, also keine Funktionalität."
+      post: "Dies schlägt fehl, wenn der Statuscode der Antwort kleiner als 200 oder größer als 299 ist."
+    403:
+      title: "Status 403 prüfen"
+      description: "Dies ist ein Validator für den HTTP-Statuscode."
+      pre: "Das ist ein Noop, also keine Funktionalität."
+      post: "Dies schlägt fehl, wenn der Statuscode der Antwort von 403 abweicht."
+    404:
+      title: "Status 404 prüfen"
+      description: "Dies ist ein Validator für den HTTP-Statuscode."
+      pre: "Das ist ein Noop, also keine Funktionalität."
+      post: "Dies schlägt fehl, wenn der Statuscode der Antwort von 404 abweicht."
+    user-agent:
+      title: "User-Agent"
+      description: "Dadurch wird eine sinnvolle Benutzeragentenzeichenfolge festgelegt, sodass diese für die Protokollierung problemlos herausgefiltert werden kann."
+      pre: "Die Benutzeragentenzeichenfolge wird basierend auf den verwendeten Versionen des Projekts und des Frameworks hinzugefügt."
+      post: "Das ist ein Noop, also keine Funktionalität."
+    cookies:
+      title: "cookies"
+      description: "Diese Middleware verarbeitet Cookies, die über Header gesendet werden."
+      pre: "Diese Funktion setzt alle verfügbaren Cookies auf die Anfrage."
+      post: "Diese Funktion ruft alle verfügbaren Cookies aus der Antwort ab."
+    json:
+      title: "JSON-Validator"
+      description: "Dieser Validator prüft, ob Header- und Body-Inhalte gültig sind."
+      pre: "Dieser Validator prüft, ob Header- und Body-Inhalte gültig sind."
+      post: "Dies schlägt fehl, wenn kein JSON zurückgegeben wurde."
+    xml:
+      title: "xml-validator"
+      description: "This validator checks for valid header and body content."
+      pre: "This is a noop, so no functionality."
+      post: "This will fail if no xml was returned."
+    silent-server-validator:
+      title: "silent-server-validator"
+      description: "This middleware tries to help keep servers a bit safer."
+      pre: "This is a noop, so no functionality."
+      post: "If the server discloses information about itself or the language used server-side, this will fail."
+    success-check:
+      title: "check response for success"
+      description: "This assumes a json response with a boolean or string status following common standards."
+      pre: "This is a noop, so no functionality."
+      post: "If the success field is not there or not a know positive this will fail."
+    failure-check:
+      title: "check response for failure"
+      description: "This assumes a json response with a boolean or string status following common standards."
+      pre: "This is a noop, so no functionality."
+      post: "If the success field is not there or not a know negative this will fail."
+  custom:
+    title: "Custom Middleware"
+    description: "For custom middleware, implement the following interface. Prepare is called before sending a request, process after a request. If an error is thrown in process, any further validations are skipped."
+
+results:
+  meta:
+    title: "Results | Usage"
+    description: "The framework @idrinth/api-bench provides default result handlers and allows for additional custom result handlers"
+  title: "Results"
+  description: "By default, all possible result formats are provided. The files are created in the application root, but that can be overwritten programmatically."
+  csv:
+    description: "This provides a file, that can easily opened by excel or handled programmatically."
+  html:
+    description: "This provides a simple HTML file, that could be sent by email for example."
+  cli:
+    description: "This provides a small table in the command line, that shows most of the data."
+  json:
+    description: "This provides a file easily handled via other software. By default, it is not formatted for readability."
+  xray:
+    title: "XRay on Jira"
+    description: "We provide two XRay handlers, that can be activated via ENV variables. If you don't set all of the environment variables, the respective reporting will be skipped."
+    shared: "Both providers need XRAY_ENDPOINT and XRAY_TEST_PLAN_KEY to be set. The first pointing to your Jira root URL, the second being the exact id of your test plan, for example TEST-123."
+    cloud: "If you are hosting in the cloud XRAY_CLIENT_ID and XRAY_CLIENT_SECRET are also required to make a login possible."
+    onpremise: "If you are hosting on premise, provide login data via XRAY_USER_NAME and XRAY_PASSWORD instead."
+    limitations: "Ensure the test id in your route id starts with a hash sign, e.g., #TEST-876. Failing to follow this format may result in errors or unrecognised test ids during the XRay processing."
+  custom:
+    title: "Custom Results"
+    description: "You can provide a custom reporter instance as part of your configuration in programmatically accessing the framework. It will be called with the complete result after all result modifiers have modified the result."
+
+usage:
+  meta:
+    title: "Usage"
+    description: "Basic usage information for the framework @idrinth/api-bench"
+  title: "Usage"
+  binaries:
+    title: "Binaries"
+    description: "The following binaries are available for use via scripts in your package.json."
+  programmatically:
+    title: "Programmatically"
+    description: "Basically require main/include main and supply the executor method with required parameters. Tasks defined in src/routes directories before, before_task, before_each, main, after_each, after_task, and after will be used to automatically fill the Job processed by the executor. Automatic filling only happens when there are no tasks provided to the function."
+
+logging:
+  meta:
+    title: "Logging | Usage"
+    description: "Information about logging usage and support of the framework @idrinth/api-bench"
+  title: "Logging"
+  description: "Any logger that either implements the interface or has a wrapper is an option. Wrappers for pino and winston are available."
+  used:
+    title: "Logging levels used"
+    description: "Most log entries are debug level, with the major steps being written to info. Trace is currently not used but may be used for detailed argument printing at some point."
+  custom:
+    title: "Custom Logger"
+    final: "For ease of use, a wrapper is provided as well, that only requires a log method to be implemented."
+    description: "You can implement the logger interface below and provide any logger you want to next to the already provided ones."
+
+storage:
+  meta:
+    title: "Storage | Usage"
+    description: "Information about the provided MySQL storage and how to create custom storage implementations for @idrinth/api-bench"
+  title:  "Storage"
+  description: "Storage classes store each finished set of the run. By default, nothing is stored, but a MySQL storage is provided for those wanting it."
+  experimental:
+    title: "Experimental"
+    description: "We are providing experimental storage support for MSSQL and Postgres starting with 2.8.0. These implementations are not yet well tested."
+  custom:
+    title: "Custom Storage"
+    description: "To provide a custom storage, implement the interface below. The method will be called once per task."
+
+routes:
+  meta:
+    title: "Routes | Usage"
+    description: "Information about how to create test route definitions with the framework @idrinth/api-bench"
+  title: "Routes"
+  description: "Routes are build as configuration objects, that must be default-exported or provided via module.exports and be in a Javascript file. The object is wrapped in a function to allow environment injection, see below for an example."
+  example:
+    title: "Example"
+    description: "The code below defines a request to a URL from the environment with GET."
+    middleware: "To apply middlewares add both the pre and post properties as shown in the example. Then proceed to pass in your middleware functions to be executed."
+
+quick-start:
+  meta:
+    title: "Quick Start"
+    description: "A few steps to quickly get an api-bench project up and running."
+  title: "@idrinth/api-bench quick start"
+  description: "Starting out with the framework is not difficult. Follow the next couple steps and you will have your first case ready to run in a few minutes."
+  step1:
+    title: "Requirements"
+    description: "Make sure that Node.js in a supported version is installed. That means one of the latest two versions. The latest long term support(lts) version is always recommended."
+  step2:
+    title: "Setup"
+    description: "Run the creation command to create a new benchmark project in a folder within your current working directory:"
+    result: "Your project is now set up with the necessary folder structure, ready for further customisation."
+  step3:
+    title: "Case creation"
+    description: "Go into the newly created project and create a new file at src/routes/main/first-test.ts. Fill it with the following example content:"
+    result: "This will test, that the URL in main returns a 2xx Status Code and send the user agent with the request."
+  step4:
+    title: "First run"
+    description: "With the following command you can run the example against a public test API to see it in action. Please don't try to create a service denial scenario and keep the thread count low. Creating a service denial scenario could result in the machine or network resource to become unavailable to intended users."
+  step5:
+    title: "Create a route of your own"
+    description: "Create a small route of your own. Most of the work with the framework is route creation, so this will show you how quickly it can be done. Refer to the Usage section for help."
+    result: "You now have an idea of how to use iab, go ahead and use it for good!"
+
+loader:
+  wait: "Trying to load fresh content for you, please wait."
+  offline: "Please go online and then refresh the page."
+  reload: "Content has changed, reloading the page for you in a moment."
+
+tools:
+  meta:
+    title: "Tools"
+    description: "These are the major tools that we use to bring value to you."
+  title: "Tools we use"
+  description: "These are the major tools in use by us, that bring value to you and help us develop better."
+  typescript: "Typescript is the base language we use across all projects. We choose it over pure JavaScript for it's ability to find errors early."
+  react: "React is the framework of this website. It allows us to write reusable code and have a simple documentation process."
+  svelte: "Svelte is used for the history website, a tool to display historical run data and compare it graphically."
+  fastify: "Fastify is used for the history microservice, a tool to access stored historical run data."
+  docker: "We provide multiple docker images for continuous integrating and hosting the history components."
+  eslint: "ESLint is the core of our continuous integration. It is used to prevent us from writing bad code or code not sticking to our standards."
+  chai: "Chai is one of the default tools for testing we use across all libraries and project parts."
+  mocha: "Mocha is one of the default tools for testing we use across all libraries and project parts."
+  cypress: "Cypress is one of the default tools for testing we use across all libraries and project parts."
+  stylelint: "Stylelint is our tool of choice for making sure we don't mess up too much when writing styles."
+  markmap-render: "Markmap is the base that we built on for our mindmap, it serves as the drawing component."
+  vue: "Vue powers the desktop client for running framework tests locally."
+  electron: "Electron powers the desktop client for running framework tests locally."
+  express: "Express is in use for our website deployment tool."
+
+command:
+  or: "or"
+  deprecated: "This command is deprecated."
+  cli: "Available via the CLI package @idrinth/api-bench-cli and the framework."
+  iabr:
+    description: "runs the current working directory's project if the routes folder is properly setup"
+    arg_1: "Argument 1: threads (default 1)"
+    arg_2: "Argument 2: repetitions (default 1)"
+    arg_3: "Argument 3: language code (default en)"
+    arg_4: "Argument 4: task id, that you want to run only (default all)"
+  iabmp:
+    description: "creates a new benchmarking project in a directory within the current working directory"
+    arg_1: "Argument 1: project name (default: benchmark)"
+  iabgfoa:
+    description: "generates test skeletons from an OpenApi documentation for a project in the current working directory"
+    arg_1: "Argument 1: path to the OpenApi document"
+  iabgfh:
+    description: "generates test skeletons from an HAR document for a project in the current working directory"
+    arg_1: "Argument 1: path to the HAR document"
+  iabgfc:
+    description: "generates a test skeleton from an CURL command for a project in the current working directory"
+    arg_1: "Argument 1: URL to test"
+  iabcrd:
+    description: "checks all routes for possible issues, so there are no surprises, when actually running the code."
+    arg_1: "Argument 1: language(default: en)"
+  iabrl:
+    description: "runs a load test with the given routes up to a limit of threads. Stops when the limit is reached or an error is found during response validation."
+    arg_1: "Argument 1: threads (default 1)"
+    arg_2: "Argument 2: repetitions (default 1)"
+    arg_3: "Argument 3: language code (default en)"
+    arg_4: "Argument 4: thread increment (default 1)"
+    arg_5: "Argument 5: maximum threads (default 100)"
+  iab:
+    description: "This command is going to replace all other commands with a  more sensible interface in 3.0.0 and is available from 2.8.0"
+    arg_1: "runs a benchmark with all options being optional."
+    arg_2: "runs a content test/integration test with all options being optional."
+    arg_3: "runs a route verification with all options being optional."
+    arg_4: "runs a load test with all options being optional."
+    arg_5: "runs a benchmark with all options being optional."
+    arg_6: "runs a stress test for the desired duration in seconds with all options being optional."
+
+cookie-consent:
+  title: "We use cookies"
+  open: "Settings"
+  description: "We use cookies to ensure you get the best experience on our website."
+  accept: "Accept"
+  decline: "Decline"
+  custom: "As above"
+  service:
+    tracking:
+      title: "Matomo tracking"
+      description: "We will track your visit via tracking.bjoern-buettner.me to improve out content."
+    youtube:
+      title: "YouTube"
+      description: "We will load videos from www.youtube-nocookie.com to directly play on the site."
+    airtime:
+      title: "Airtime"
+      description: "Participate in a short user survey via airtimeux.com with the response data stored by them."
+
+language-switch:
+  aria: "Language switch"
+
+languages:
+  en: "English"
+  fr: "Français"
+  it: "Italiano"
+  de: "Deutsch"
+  es: "Español"
