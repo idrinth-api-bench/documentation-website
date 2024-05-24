@@ -45,6 +45,7 @@ const DarkModeButton = ({
   };
 
   return <button className="theme-toggle-btn"
+    aria-label={isDarkMode ? 'Light Mode' : 'Dark Mode'}
     onClick={toggleLightDarkMode}
   >
     {isDarkMode ? <IoSunny /> : <IoMoon />}

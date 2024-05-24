@@ -16,6 +16,7 @@ nav:
   quick-start: "Quick Start"
   faq: "FAQ"
   code-of-conduct: "Code of Conduct"
+  tools: "Tools"
 
 socials:
   npm:
@@ -502,6 +503,27 @@ loader:
   wait: "Trying to load fresh content for you, please wait."
   offline: "Please go online and then refresh the page."
   reload: "Content has changed, reloading the page for you in a moment."
+
+tools:
+  meta:
+    title: "Tools"
+    description: "These are the major tools that we use to bring value to you."
+  title: "Tools we use"
+  description: "These are the major tools in use by us, that bring value to you and help us develop better."
+  typescript: "Typescript is the base language we use across all projects. We choose it over pure JavaScript for it's ability to find errors early."
+  react: "React is the framework of this website. It allows us to write reusable code and have a simple documentation process."
+  svelte: "Svelte is used for the history website, a tool to display historical run data and compare it graphically."
+  fastify: "Fastify is used for the history microservice, a tool to access stored historical run data."
+  docker: "We provide multiple docker images for continuous integrating and hosting the history components."
+  eslint: "ESLint is the core of our continuous integration. It is used to prevent us from writing bad code or code not sticking to our standards."
+  chai: "Chai is one of the default tools for testing we use across all libraries and project parts."
+  mocha: "Mocha is one of the default tools for testing we use across all libraries and project parts."
+  cypress: "Cypress is one of the default tools for testing we use across all libraries and project parts."
+  stylelint: "Stylelint is our tool of choice for making sure we don't mess up too much when writing styles."
+  markmap-render: "Markmap is the base that we built on for our mindmap, it serves as the drawing component."
+  vue: "Vue powers the desktop client for running framework tests locally."
+  electron: "Electron powers the desktop client for running framework tests locally."
+  express: "Express is in use for our website deployment tool."
 
 command:
   or: "or"

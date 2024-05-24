@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://idrinth-api-ben.ch/sitemap.xml

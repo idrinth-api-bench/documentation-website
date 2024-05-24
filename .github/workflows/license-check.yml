@@ -1,0 +1,28 @@
+name: license lint
+on:
+  push:
+    branches:
+      - the-one
+    paths:
+      - 'package-lock.json'
+      - '.github/workflows/license-check.yml'
+  pull_request:
+    branches:
+      - the-one
+    paths:
+      - 'package-lock.json'
+      - '.github/workflows/license-check.yml'
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: latest
+          cache: 'npm'
+          cache-dependency-path: |
+            package-lock.json
+      - run: npm ci
+      - run: npx license-checker -- --production --onlyAllow="MIT;ISC;Apache-2.0;BSD-2-Clause;BSD-3-Clause;Python-2.0;LGPL-2.1;GPL-2.0;BlueOak-1.0.0;CC0-1.0;0BSD;WTFPL;Unlicense"
