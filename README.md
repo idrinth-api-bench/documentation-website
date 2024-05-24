@@ -2,7 +2,7 @@
 
 ## Description
 
-Website made using React to show the ideas behind the API benchmark 
+Website made using React to show the ideas behind the API benchmark
 implementation portraying the provided README.
 
 ## Installation
@@ -37,8 +37,11 @@ was created for, in case this token will be used in the future.
 must, but that's up for personal preference.
 9) Now, specifically for this repository, your token must have **only** two
 permissions:
+
 - [X] public_repo
+      
 - [X] read:org
+      
 10) Now, click on `Generate token`.
 11) We're almost there: you're now facing your token. Copy that, you'll
 need it in a second.
@@ -65,8 +68,12 @@ If you encounter any problems with this, try checking the
 
 ```bash
 # development watch mode
+
 npm run dev
+
 # production mode
+
 npm run start
+
 ```
 ## [Issues](https://github.com/idrinth-api-bench/issues)
