@@ -37,14 +37,13 @@ wish.
 10. Copy the token value that is generated.
 11. Create or find a file called `.env`.
 12. Inside that file, add or change the value of the variable
-`GITHUB_API_TOKEN` to the value of your token, like this:
+`GITHUB_API_TOKEN` to the value of your token, like below.
+13. Now you can install the dependencies by typing the installation
+command.
 
 ```ini
 GITHUB_API_TOKEN=gh_api_token_with_read_org_and_read_repo
 ```
-
-13. Now you can install the dependencies by typing the installation
-command.
 
 ### Installation command
 
