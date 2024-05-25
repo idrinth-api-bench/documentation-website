@@ -32,11 +32,7 @@ page and click on `<> Developer settings`.
 was created for.
 7. Set an expiration time for your token for extra safety, if you
 wish.
-8. Your token must have **only** two permissions:
-
-  - [X] `public_repo`
-  - [X] `read:org`
-
+8. Your token must have **only** two permissions: `public_repo` `read:org`
 9. Click on `Generate token`.
 10. Copy the token value that is generated.
 11. Create or find a file called `.env`.
