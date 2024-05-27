@@ -73,7 +73,7 @@
     "@types/react-router-dom": "^5.3.3",
     "@types/react-syntax-highlighter": "^15.5.13",
     "@typescript-eslint/eslint-plugin": "^7.10.0",
-    "@vitejs/plugin-react": "^4.2.1",
+    "@vitejs/plugin-react": "^4.3.0",
     "babel-plugin-istanbul": "^6.1.1",
     "c8": "^9.1.0",
     "chai": "^5.1.1",
