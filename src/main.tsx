@@ -12,9 +12,11 @@ import routes from './routes.tsx';
 import WaitLoader from './page-like/loader/wait.tsx';
 import OfflineLoader from './page-like/loader/offline.tsx';
 import ReloadLoader from './page-like/loader/reload.tsx';
+import PageLayout from './components/page-layout.tsx';
 
 const router = createBrowserRouter(routes(
   WaitLoader,
+  PageLayout,
   ReloadLoader,
   OfflineLoader,
 ),);

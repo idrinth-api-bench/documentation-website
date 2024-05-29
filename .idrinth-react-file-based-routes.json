@@ -4,5 +4,8 @@
   },
   "runtime": {
     "reloadWaitMs": 1000
+  },
+  "routes": {
+    "useOutput": true
   }
 }
