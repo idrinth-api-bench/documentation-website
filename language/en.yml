@@ -41,7 +41,7 @@ socials:
     title: "idrinth/api-bench on GitHub"
     alt: "GitHub"
   medium:
-    title: "idrinth/api-bench on Medium"
+    title: "idrinth-api-bench on Medium"
     alt: "Medium"
   youtube:
     title: "idrinth-api-bench on YouTube"
@@ -58,6 +58,9 @@ socials:
   reddit:
     title: "@idrinth/api-bench on Reddit"
     alt: "Reddit"
+  x:
+    title: "@IdrinthAPIBench on X/Twitter"
+    alt: "X/Twitter"
 
 code-of-conduct:
   meta:
