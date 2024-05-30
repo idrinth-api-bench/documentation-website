@@ -1,5 +1,6 @@
 import React, {
-  useState, useEffect,
+  useState,
+  useEffect,
 } from 'react';
 import {
   IoSunny,
@@ -45,9 +46,10 @@ const DarkModeButton = ({
   };
 
   return <button className="theme-toggle-btn"
+    aria-label={isDarkMode ? 'Light Mode' : 'Dark Mode'}
     onClick={toggleLightDarkMode}
   >
-    {isDarkMode ? <IoSunny /> : <IoMoon />}
+    {isDarkMode ? <IoSunny width={25} height={25}/> : <IoMoon width={25} height={25}/>}
   </button>;
 };
 export default DarkModeButton;

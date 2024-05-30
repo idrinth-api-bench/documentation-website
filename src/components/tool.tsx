@@ -1,30 +1,28 @@
 import React from 'react';
+import Lang from './lang.tsx';
+import './tool.scss';
+import languageKey from '../locales/language-key.ts';
 
 interface ToolType {
   name: string;
-  imgSrc?: string;
-  desc: string;
   link: string
 }
 
 const Tool = ({
-  name, imgSrc, desc, link,
-}: ToolType,) => {
-
-  const Image = imgSrc ? <img src={imgSrc} alt={name}/> : '';
-
-  return <div>
-    <a
-      href={link}
-      target='_blank'
-      rel='noreferrer'
-    >
-      <h3>{name}</h3>
-    </a>
-    {Image}
-    <p>{desc}</p>
-  </div>;
-};
+  name,
+  link,
+}: ToolType,) => <div className={'tool'}>
+  <a
+    href={link}
+    target='_blank'
+    rel='noreferrer'
+  >
+    <h3>{name}</h3>
+  </a>
+  <p>
+    <Lang lnkey={`tools.${ name }` as languageKey}/>
+  </p>
+</div>;
 
 export default Tool;
 

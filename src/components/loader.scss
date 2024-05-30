@@ -25,6 +25,10 @@
   }
 }
 
+.dark-mode #loader span {
+  background-image: url('../assets/loading-svgrepo-com.white.svg');
+}
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);

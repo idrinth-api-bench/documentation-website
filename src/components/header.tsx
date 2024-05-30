@@ -119,7 +119,7 @@ const Header = ({
           <Lang lnkey='nav.contributing'/>
           <MdArrowDropDown onClick={preventOpenLink} />
         </NavLink>
-        <ul aria-labelledby="dropdown-contributing" id="contributing-menu" >
+        <ul aria-labelledby="dropdown-contributing" id="contributing-menu">
           <li>
             <NavLink to="/contributing/contributors/">
               <Lang lnkey='nav.contributors'/>
@@ -128,6 +128,11 @@ const Header = ({
           <li>
             <NavLink to="/contributing/sponsors/">
               <Lang lnkey='nav.sponsors'/>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/contributing/tools/">
+              <Lang lnkey='nav.tools'/>
             </NavLink>
           </li>
         </ul>

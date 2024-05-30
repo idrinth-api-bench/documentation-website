@@ -1,0 +1,35 @@
+name: FTA
+on:
+  push:
+    branches:
+    - the-one
+    paths:
+      - '**.ts'
+      - '**.tsx'
+      - '**.js'
+      - '**.json'
+      - '.github/workflows/fta.yml'
+  pull_request:
+    branches:
+    - the-one
+    paths:
+    - '**.ts'
+    - '**.tsx'
+    - '**.js'
+    - '**.json'
+    - '.github/workflows/fta.yml'
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: latest
+          cache: 'npm'
+          cache-dependency-path: |
+            package-lock.json
+      - run: npm ci
+      - run: npm run language
+      - run: npm run fta

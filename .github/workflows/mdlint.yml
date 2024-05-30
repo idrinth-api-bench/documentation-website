@@ -1,0 +1,30 @@
+name: MARKDOWN-LINT
+on:
+  push:
+    branches:
+    - the-one
+    paths:
+    - '*.md'
+    - 'package-lock.json'
+    - '.github/workflows/mdlint.yml'
+  pull_request:
+    branches:
+    - the-one
+    paths:
+      - '*.md'
+      - 'package-lock.json'
+      - '.github/workflows/mdlint.yml'
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: latest
+          cache: 'npm'
+          cache-dependency-path: |
+            package-lock.json
+      - run: npm ci
+      - run: npm run lint-md
