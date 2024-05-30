@@ -45,7 +45,6 @@
     "lighthouse": "npm run build && start-server-and-test serve http://localhost:8080 'node tools/lighthouse-report.js'"
   },
   "dependencies": {
-    "@fontsource/roboto": "^5.0.12",
     "@uiw/react-head": "^1.0.4",
     "million": "^3.1.6",
     "react": "^18.2.0",
