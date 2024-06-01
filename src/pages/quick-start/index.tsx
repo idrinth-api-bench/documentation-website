@@ -10,7 +10,10 @@ const Index = () => <Layout
   <ContentUnit text={'quick-start.title'} level={'h1'}>
     quick-start.description
   </ContentUnit>
-  <ContentUnit text={'quick-start.step1.title'} level={'h2'}>
+  <ContentUnit
+    text={'quick-start.step1.title'}
+    level={'h2'}
+  >
     quick-start.step1.description
   </ContentUnit>
   <CodeUnit
@@ -18,12 +21,14 @@ const Index = () => <Layout
     prefix={'quick-start.step2.description'}
     postfix={'quick-start.step2.result'}
     level={'h2'}
+    more={'/usage'}
     language={'bash'}>npx -p @idrinth/api-bench-cli iabmp</CodeUnit>
   <CodeUnit
     prefix={'quick-start.step3.description'}
     text={'quick-start.step3.title'}
     postfix={'quick-start.step3.result'}
     level={'h2'}
+    more={'/usage/routes'}
     language={'typescript'}>
     {`export default () => ({
   id: 'example test case',
@@ -47,7 +52,8 @@ const Index = () => <Layout
     prefix={'quick-start.step4.description'}>npm start</CodeUnit>
   <ContentUnit
     text={'quick-start.step5.title'}
-    level={'h2'}>
+    level={'h2'}
+  >
     quick-start.step5.description
     quick-start.step5.result
   </ContentUnit>
