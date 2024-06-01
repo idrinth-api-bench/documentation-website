@@ -1,15 +1,16 @@
 .tool {
   display: grid;
   grid-template-columns: min(200px, 50%) auto;
-  background: rgba(0, 0, 0, .1);
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  background: rgb(0 0 0 / 10%);
+  row-gap: 0.5em;
   border-radius: 1em 0 0 1em;
+
   > p {
     padding: 0.5em;
   }
-  > :first-child {
-    background: rgba(0, 0, 0, .1);
+
+  > h2 {
+    background: rgb(0 0 0 / 10%);
     border-radius: 1em 0 0 1em;
     border-right: 1px solid var(--highlight-color);
     padding-right: 0.5em;
