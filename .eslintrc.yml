@@ -18,6 +18,9 @@ ignorePatterns:
   - 'src/routes.tsx'
 root: true
 parser: "@typescript-eslint/parser"
+settings:
+  react:
+    version: detect
 rules:
   "react-refresh/only-export-components":
     - "warn"

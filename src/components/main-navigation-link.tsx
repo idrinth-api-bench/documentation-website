@@ -7,7 +7,7 @@ import languageKey from '../locales/language-key.ts';
 
 const MainNavigationLink = ({
   lnkey,
-  children
+  children,
 }: {
   lnkey: languageKey,
   children: string

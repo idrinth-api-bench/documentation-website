@@ -1,9 +1,13 @@
 import languageKey from '../locales/language-key.ts';
-import {NavLink} from 'react-router-dom';
+import {
+  NavLink,
+} from 'react-router-dom';
 import Lang from './lang.tsx';
 import React from 'react';
 import MainNavigationLink from './main-navigation-link.tsx';
-import {MdArrowDropDown} from 'react-icons/md';
+import {
+  MdArrowDropDown,
+} from 'react-icons/md';
 import preventOpenLink from './prevent-open-link.tsx';
 
 const mainNavigationLinks = ({
@@ -16,21 +20,21 @@ const mainNavigationLinks = ({
   items: string[],
   children: string,
   ariakey: string,
-}) => <li key={lnkey}>
+},) => <li key={lnkey}>
   <NavLink
     to={children}
     aria-expanded="false"
-    id={`dropdown-${ariakey}`}
-    aria-controls={`${ariakey}-menu`}
+    id={`dropdown-${ ariakey }`}
+    aria-controls={`${ ariakey }-menu`}
   >
     <Lang lnkey={lnkey}/>
     <MdArrowDropDown onClick={preventOpenLink}/>
   </NavLink>
-  <ul aria-labelledby={`dropdown-${ariakey}`} id={`${ariakey}-menu`}>{
+  <ul aria-labelledby={`dropdown-${ ariakey }`} id={`${ ariakey }-menu`}>{
     items.map((child,) => <MainNavigationLink
       key={ariakey + child}
-      lnkey={`nav.${child}` as languageKey}
-    >{`${children}/${child}`}</MainNavigationLink>)
+      lnkey={`nav.${ child }` as languageKey}
+    >{`${ children }/${ child }`}</MainNavigationLink>,)
   }</ul>
 </li>;
 

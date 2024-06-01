@@ -11,7 +11,6 @@ import './header.scss';
 import MainNavigation from './main-navigation.tsx';
 import SocialNavigation from './social-navigation.tsx';
 
-
 const Header = ({
   window,
 }: {window: Window},) => <header>

@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../../../components/layout.tsx';
 import Lang from '../../../components/lang.tsx';
 import CodeUnit from '../../../components/code-unit.tsx';
-import Middleware from "../../../components/middleware.tsx";
+import Middleware from '../../../components/middleware.tsx';
 
 const Middlewares = () => <Layout
   page='middlewares'

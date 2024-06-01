@@ -4,7 +4,7 @@ import React, {
 import Lang from './lang.tsx';
 import languageKey from '../locales/language-key.ts';
 import Content from './content.tsx';
-import Further from "./Further.tsx";
+import Further from './Further.tsx';
 
 interface CardProps {
   text: languageKey;

@@ -8,12 +8,18 @@ const MainNavigation = () => <nav aria-label='Main Menu'>
     <li>
       <ExternalLink to="https://tally.so/r/3NA48l" label='Feedback'/>
     </li>
-    <MainNavigationLink lnkey={'nav.quick-start'}>/quick-start</MainNavigationLink>
-    <MainNavigationLinks ariakey={'contributing'} lnkey={'nav.contributors'} items={[
-      'contributors',
-      'sponsors',
-      'tools',
-    ]}>/contributing</MainNavigationLinks>
+    <MainNavigationLink
+      lnkey={'nav.quick-start'}
+    >/quick-start</MainNavigationLink>
+    <MainNavigationLinks
+      ariakey={'contributing'}
+      lnkey={'nav.contributors'}
+      items={[
+        'contributors',
+        'sponsors',
+        'tools',
+      ]}
+    >/contributing</MainNavigationLinks>
     <MainNavigationLinks ariakey={'usage'} lnkey={'nav.usage'} items={[
       'autowiring',
       'results',

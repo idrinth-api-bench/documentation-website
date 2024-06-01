@@ -29,8 +29,8 @@ const SocialNavigation = () => <nav aria-label='Social Links Menu'>
     />
     <SocialLink
       to={[
-        "https://www.linkedin.com/groups/9588634/",
-        "https://www.linkedin.com/company/iab-idrinth-api-bench/",
+        'https://www.linkedin.com/groups/9588634/',
+        'https://www.linkedin.com/company/iab-idrinth-api-bench/',
       ]}
       label={'linkedin'}
     />

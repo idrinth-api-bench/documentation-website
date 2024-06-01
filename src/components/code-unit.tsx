@@ -3,7 +3,7 @@ import languageKey from '../locales/language-key.ts';
 import Content from './content.tsx';
 import Code from './code.tsx';
 import Lang from './lang.tsx';
-import Further from "./Further.tsx";
+import Further from './Further.tsx';
 
 interface CardProps {
   text: languageKey;
