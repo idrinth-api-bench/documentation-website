@@ -29,8 +29,8 @@ const mainNavigationLinks = ({
   <ul aria-labelledby={`dropdown-${ariakey}`} id={`${ariakey}-menu`}>{
     items.map((child,) => <MainNavigationLink
       key={ariakey + child}
-      lnkey={'nav.' + child as languageKey}
-    >{children  + '/' + child}</MainNavigationLink>)
+      lnkey={`nav.${child}` as languageKey}
+    >{`${children}/${child}`}</MainNavigationLink>)
   }</ul>
 </li>;
 
