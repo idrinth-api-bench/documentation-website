@@ -18,11 +18,12 @@
     <link rel="preload" href="/assets/socials/x.svg">
     <link rel="preload" href="/assets/socials/youtube.svg">
     <link rel="preload" href="node_modules/@idrinth-api-bench/assets/iab.svg"/>
-    <style>body,html{background: #333}@media screen and(prefers-color-scheme:light){body,html{background: #ccc}}head,style,script{display:none !important}</style>
+    <style id="defaults">body,html{background: #333}@media screen and(prefers-color-scheme:light){body,html{background: #ccc}}head,style,script{display:none !important}</style>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     <script type="module" src="/src/tracking.ts"></script>
+    <script>setTimeout(()=>{const n=document.getElementById('defaults');n.parentNode.removeChild(n)}, 500)</script>
   </body>
 </html>

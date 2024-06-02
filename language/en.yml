@@ -52,6 +52,10 @@ socials:
   linkedin:
     title: "@idrinth/api-bench on LinkedIn"
     alt: "LinkedIn"
+    title0: "@idrinth-api-bench  user and maintainer group"
+    text0: "User-Group"
+    title1: "idrinth-api-bench organisation"
+    text1: "IAB Org"
   open-sauced:
     title: "@idrinth/api-bench projects on OpenSauced"
     alt: "OpenSauced"
@@ -584,8 +588,9 @@ cookie-consent:
       title: "YouTube"
       description: "We will load videos from www.youtube-nocookie.com to directly play on the site."
 
-language-switch:
-  aria: "Language switch"
+general:
+  language-switch: "Language switch"
+  more: "More here"
 
 languages:
   en: "English"

@@ -4,17 +4,20 @@ import React, {
 import Lang from './lang.tsx';
 import languageKey from '../locales/language-key.ts';
 import Content from './content.tsx';
+import Further from './Further.tsx';
 
 interface CardProps {
   text: languageKey;
   level: 'h1'|'h2'|'h3'|'h4'|'h5'|'h6';
   children: string|languageKey;
+  more?: string;
 }
 
 const ContentUnit = ({
   text,
   level,
   children,
+  more,
 }: CardProps,) => {
   const GenerateContent = (): ReactNode => {
     const keys: languageKey[] = children.split(' ',) as languageKey[];
@@ -24,6 +27,7 @@ const ContentUnit = ({
   };
   return <Content level={level} text={text}>
     <GenerateContent/>
+    { more && <Further>{more}</Further>}
   </Content>;
 };
 

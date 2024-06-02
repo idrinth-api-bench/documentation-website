@@ -20,7 +20,6 @@ const LanguageSwitch = ({
   const changeLanguage = (newLanguage: string,) => {
     setLanguage(newLanguage,);
     window.localStorage.setItem('language', newLanguage,);
-    // reload page
     window.location.reload();
   };
 

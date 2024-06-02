@@ -64,6 +64,7 @@ const setUnixPerms = (binaryPath,) => {
     try {
       fs.chmodSync(binaryPath, '755',);
     } catch (e) {
+      //eslint-disable-next-line no-console
       console.warn('Could not chmod fta binary: ', e,);
     }
   }
@@ -120,10 +121,13 @@ for (const file of output) {
   ].join('|',);
   if (file.fta_score > ERROR_FTA_SCORE) {
     hardToMaintain = true;
+    //eslint-disable-next-line no-console
     console.error(message,);
   } else if (file.fta_score > WARNING_FTA_SCORE) {
+    //eslint-disable-next-line no-console
     console.warn(message,);
   } else {
+    //eslint-disable-next-line no-console
     console.log(message,);
   }
 }

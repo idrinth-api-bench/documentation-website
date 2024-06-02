@@ -21,9 +21,7 @@ export default defineConfig({
       output: {
         importAttributesKey: 'with',
       },
-      plugins: [
-        plugin(),
-      ],
+      plugins: [ plugin(), ],
     },
   },
   plugins: [ react({

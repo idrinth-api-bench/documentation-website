@@ -9,15 +9,10 @@ interface LayoutProps {
 
 const Layout = ({
   children,
-}: LayoutProps,) => {
-  return (
-    <>
-      <Header window={window || {}} />
-      {children}
-      <Footer window={window || {}} />
-      <ScrollToHashElement />
-    </>
-  );
-};
-
+}: LayoutProps,) => <>
+  <Header window={window || {}} />
+  {children}
+  <Footer window={window || {}} />
+  <ScrollToHashElement />
+</>;
 export default Layout;
