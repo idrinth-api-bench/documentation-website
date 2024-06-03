@@ -21,3 +21,9 @@ FilterProvider COMPRESS DEFLATE "%{Content_Type} -strmatch 'img/svg+xml*'"
 FilterProvider COMPRESS DEFLATE "%{Content_Type} -strmatch 'application/json*'"
 FilterChain COMPRESS
 FilterProtocol COMPRESS DEFLATE change=yes;byteranges=no
+
+# Security Headers
+Header set X-XSS-Protection "1; mode=block"
+Header set X-Frame-Options "SAMEORIGIN"
+Header set Referrer-Policy "same-origin"
+Header set Content-Security-Policy "default-src 'self'; script-src 'self' https://tracking.bjoern-buettner.me"
