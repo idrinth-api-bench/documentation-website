@@ -21,24 +21,18 @@ export default async(lnkey: languageKey, global?: object,): Promise<string> => {
   if (! files.includes(`en-${ main }`,)) {
     return lnkey;
   }
-  const originals = await import(`../locales/en-${ main }.ts`);
-  let output = (files.includes(`${ language }-${ main }`,)
-    ? await import(`../locales/${ language }-${ main }.ts`)
-    : originals).default;
-  let defaultOutput = originals.default;
-  if (! output) {
-    output = defaultOutput;
+  if (files.includes(`${ language }-${ main }`,)) {
+    return (await import(`../locales/${ language }-${ main }.ts`))?.default[
+      lnkey
+        .split('.',)
+        .slice(SECOND_ELEMENT,)
+        .join('.',)
+    ] ?? lnkey;
   }
-  if (! defaultOutput) {
-    return lnkey;
-  }
-  try {
-    for (const part of lnkey.split('.',).slice(SECOND_ELEMENT,)) {
-      output = output[part] || defaultOutput[part];
-      defaultOutput = defaultOutput[part];
-    }
-    return output || lnkey;
-  } catch (E) {
-    return lnkey;
-  }
+  return (await import(`../locales/en-${ main }.ts`))?.default[
+    lnkey
+      .split('.',)
+      .slice(SECOND_ELEMENT,)
+      .join('.',)
+  ] ?? lnkey;
 };

@@ -5,3 +5,5 @@ isVerbatimModuleSyntax: false
 isSplit: true
 isStrictTypes: false
 isFailOnWarning: false
+shouldInjectDefaultLanguage: true
+isSimplifiedHashMap: true
