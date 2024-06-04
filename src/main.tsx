@@ -25,3 +25,11 @@ ReactDOM.createRoot(document.getElementById('root',)!,).render(
     <RouterProvider router={router}/>
   </React.StrictMode>,
 );
+setTimeout(
+  () => {
+    const n = document.getElementById('defaults',);
+    n?.parentNode?.removeChild(n,);
+  },
+  // eslint-disable-next-line no-magic-numbers
+  500,
+);
