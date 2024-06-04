@@ -23,7 +23,7 @@ FilterChain COMPRESS
 FilterProtocol COMPRESS DEFLATE change=yes;byteranges=no
 
 # CORS HEADERS
-Header set Access-Control-Allow-Origin "idrinth-api-ben.ch"
+Header set Access-Control-Allow-Origin "https://idrinth-api-ben.ch"
 Header set Access-Control-Allow-Method "GET,OPTIONS,HEAD"
 
 # Security Headers
