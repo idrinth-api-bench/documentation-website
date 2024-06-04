@@ -34,7 +34,7 @@
     "tools": "node tools/prepare-tools.js",
     "language": "itlfy generate",
     "check-language": "itlfy check",
-    "pure-build": "npm run drop-dist && vite build && iabiccss --inline-all && irfbrgf",
+    "pure-build": "npm run drop-dist && vite build && iabiccss --inline-all && node tools/add-url-in-prod.js && irfbrgf",
     "drop-dist": "node tools/drop-dist.js",
     "spellcheck": "itlfy dump && spellchecker",
     "knip": "knip",
