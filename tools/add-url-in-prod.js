@@ -10,7 +10,8 @@ if (process.env.LIVE_SITE === 'true') {
       .replace(
         /<meta charset="UTF-8" \/>/ug,
         '<meta charset=UTF-8><base href=https://iab-cdn.com/>',
-      ),
+      )
+      .replace(/ crossorigin/ug, ' ',),
     'utf8',
   );
 }
