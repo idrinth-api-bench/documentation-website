@@ -1,7 +1,4 @@
 import React from 'react';
-import {
-  NavLink,
-} from 'react-router-dom';
 import pkg from '../../package.json' with {
   type: 'json'
 };
@@ -10,14 +7,15 @@ import DarkModeButton from './dark-mode-button.tsx';
 import './header.scss';
 import MainNavigation from './main-navigation.tsx';
 import SocialNavigation from './social-navigation.tsx';
+import NavigationLink from './navigation-link.tsx';
 
 const Header = ({
   window,
 }: {window: Window},) => <header>
   <div>
-    <NavLink id="logo" to="/">
+    <NavigationLink id="logo" to="/">
       <img src={IAB} alt="@idrinth/api-bench"/>
-    </NavLink>
+    </NavigationLink>
     <strong>@idrinth/api-bench</strong>
     <em>v{pkg.version}</em>
   </div>

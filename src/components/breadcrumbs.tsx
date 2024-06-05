@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  NavLink,
-} from 'react-router-dom';
+import NavigationLink from './navigation-link.tsx';
 import Lang from './lang.tsx';
 import {
   ONE,
@@ -34,13 +32,13 @@ const build = (
   }
   url += '/';
   nav.push(<li key={name}>
-    <NavLink to={url}>
+    <NavigationLink to={url}>
       {
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-expect-error
         <Lang lnkey={'nav.' + name}/>
       }
-    </NavLink>
+    </NavigationLink>
   </li>,);
 };
 

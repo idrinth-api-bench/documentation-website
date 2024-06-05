@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  NavLink,
-} from 'react-router-dom';
+import NavigationLink from './navigation-link.tsx';
 import CookieConsent from './cookie-consent.tsx';
 import Lang from './lang.tsx';
 import LanguageSwitch from './language-switch.tsx';
@@ -19,24 +17,24 @@ const Footer = ({
       <CookieConsent />
     </li>
     <li>
-      <NavLink to='/license/'>
+      <NavigationLink to='/license/'>
         <Lang lnkey='nav.license' />
-      </NavLink>
+      </NavigationLink>
     </li>
     <li>
-      <NavLink to='/imprint/'>
+      <NavigationLink to='/imprint/'>
         <Lang lnkey='nav.imprint' />
-      </NavLink>
+      </NavigationLink>
     </li>
     <li>
-      <NavLink to='/support/'>
+      <NavigationLink to='/support/'>
         <Lang lnkey='nav.support' />
-      </NavLink>
+      </NavigationLink>
     </li>
     <li>
-      <NavLink to='/code-of-conduct/'>
+      <NavigationLink to='/code-of-conduct/'>
         <Lang lnkey='nav.code-of-conduct' />
-      </NavLink>
+      </NavigationLink>
     </li>
   </ul>
 </footer>;

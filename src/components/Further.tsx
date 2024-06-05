@@ -1,13 +1,11 @@
 import React from 'react';
 import Lang from './lang.tsx';
-import {
-  NavLink,
-} from 'react-router-dom';
+import NavigationLink from './navigation-link.tsx';
 
 const Further = ({
   children,
-}: {children: string,},) => <NavLink to={children}>
+}: {children: string,},) => <NavigationLink to={children}>
   <Lang lnkey={'general.more'}/>
-</NavLink>;
+</NavigationLink>;
 
 export default Further;

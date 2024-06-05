@@ -1,9 +1,7 @@
-import {
-  NavLink,
-} from 'react-router-dom';
 import Lang from './lang.tsx';
 import React from 'react';
 import languageKey from '../locales/language-key.ts';
+import NavigationLink from './navigation-link.tsx';
 
 const MainNavigationLink = ({
   lnkey,
@@ -12,9 +10,9 @@ const MainNavigationLink = ({
   lnkey: languageKey,
   children: string
 },) => <li key={lnkey}>
-  <NavLink to={children}>
+  <NavigationLink to={children}>
     <Lang lnkey={lnkey}/>
-  </NavLink>
+  </NavigationLink>
 </li>;
 
 export default MainNavigationLink;
