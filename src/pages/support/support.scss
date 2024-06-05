@@ -1,0 +1,31 @@
+.products {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+
+  .price {
+    display: flex;
+    flex-direction: column;
+  }
+
+  span {
+    font-weight: normal;
+    background: var(--highlight-color);
+    color: var(--highlight-text);
+    display: inline-block;
+    width: 3em;
+    padding: 0.1em;
+    border-radius: 0.25em;
+    text-align: right;
+    place-self: end baseline;
+  }
+}
+@media screen and (width >= 550px) {
+  .products {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .price {
+    grid-row: 2;
+  }
+}
