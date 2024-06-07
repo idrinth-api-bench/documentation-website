@@ -10,7 +10,7 @@ if (process.env.LIVE_SITE === 'true') {
       .replace(
         /<meta charset="UTF-8" \/>/ug,
         '<meta charset=UTF-8>' +
-        '<base href=https://iab-cdn.com/ data-base=https://idrinth-api-ben.ch/>',
+        '<base data-href=https://iab-cdn.com/ href=https://idrinth-api-ben.ch/>',
       )
       .replace(/ crossorigin/ug, ' ',),
     'utf8',
