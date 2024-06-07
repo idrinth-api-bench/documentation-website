@@ -15,7 +15,7 @@ const NavigationLink = ({
   children: string|ReactNode,
 }&NavLinkProps,) => <NavLink
   {...props}
-  to={window.location.protocol + '//' + window.location.host + to}
+  to={to}
 >{children}</NavLink>;
 
 export default NavigationLink;

@@ -18,7 +18,9 @@ const router = createBrowserRouter(routes(
   PageLayout,
   ReloadLoader,
   OfflineLoader,
-),);
+), {
+  basename: window.location.protocol + '//' + window.location.host,
+},);
 
 ReactDOM.createRoot(document.getElementById('root',)!,).render(
   <React.StrictMode>
