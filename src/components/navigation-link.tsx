@@ -16,6 +16,10 @@ const onLoad = () => {
   }
 };
 
+window.addEventListener('beforeunload', () => {
+  console.log(window.location.hostname,);
+},);
+
 const NavigationLink = ({
   to,
   children,
