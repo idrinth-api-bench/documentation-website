@@ -9,7 +9,8 @@ if (process.env.LIVE_SITE === 'true') {
     readFileSync('./dist/index.html', 'utf8',)
       .replace(
         /<meta charset="UTF-8" \/>/ug,
-        '<meta charset=UTF-8><base href=https://iab-cdn.com/>',
+        '<meta charset=UTF-8>' +
+        '<base href=https://iab-cdn.com/ data-base=https://idrinth-api-ben.ch/>',
       )
       .replace(/ crossorigin/ug, ' ',),
     'utf8',

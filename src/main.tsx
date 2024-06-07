@@ -12,6 +12,9 @@ import WaitLoader from './page-like/loader/wait.tsx';
 import OfflineLoader from './page-like/loader/offline.tsx';
 import ReloadLoader from './page-like/loader/reload.tsx';
 import PageLayout from './components/page-layout.tsx';
+import {
+  FIRST_ELEMENT,
+} from './constants.ts';
 
 const router = createBrowserRouter(routes(
   WaitLoader,
@@ -19,7 +22,10 @@ const router = createBrowserRouter(routes(
   ReloadLoader,
   OfflineLoader,
 ), {
-  basename: window.location.protocol + '//' + window.location.host,
+  basename:
+    // eslint-disable-next-line max-len
+    document.getElementsByTagName('base',)[FIRST_ELEMENT]?.getAttribute('data-base',)
+    ?? window.location.protocol + '//' + window.location.host,
 },);
 
 ReactDOM.createRoot(document.getElementById('root',)!,).render(
