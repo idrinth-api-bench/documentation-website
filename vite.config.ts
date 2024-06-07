@@ -34,7 +34,7 @@ const config = {
     },
   },), ],
 };
-if (process.env.LIVE_SITE !== 'true') {
+if (process.env.LIVE_SITE === 'true') {
   config.base = 'https://iab-cdn.com/';
 }
 // https://vitejs.dev/config/
