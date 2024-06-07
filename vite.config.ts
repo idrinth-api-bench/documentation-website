@@ -14,8 +14,9 @@ const babelPlugins = [
 if (process.env.LIVE_SITE !== 'true') {
   babelPlugins.push(istanbul,);
 }
-// https://vitejs.dev/config/
-export default defineConfig({
+const config = {
+  // eslint-disable-next-line no-undefined
+  base: undefined,
   build: {
     rollupOptions: {
       output: {
@@ -32,4 +33,11 @@ export default defineConfig({
       },
     },
   },), ],
-},);
+};
+if (process.env.LIVE_SITE !== 'true') {
+  config.base = 'https://iab-cdn.com/';
+}
+// https://vitejs.dev/config/
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
+export default defineConfig(config,);
