@@ -183,7 +183,7 @@ contributing:
   youtube: "Structure Overview on YouTube"
   structure:
     title: "Structure"
-    description: "The project is a mono-repo grouped into multiple subprojects, for example documentation-website, framework, history-microservice, CLI, mindmap, history-website. You can find more detailed instructions for the specific part in the corresponding folder's readme."
+    description: "The project is an organisation grouped into multiple repositories, for example documentation-website, framework, history-microservice, CLI, mindmap, history-website. You can find more detailed instructions for the specific part in the corresponding folder's readme."
   issues:
     title: "Issues"
     description: "Any idea and bug report is considered a contribution. Not only do they help improving the code base, they help other people to get more use out of this framework. Please try to stick to the format of predefined issue types to make it easier to filter and handle for anyone interested in the topic."
