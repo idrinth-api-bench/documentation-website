@@ -58,7 +58,7 @@
     "@idrinth-api-bench/mindmap": "https://github.com/idrinth-api-bench/mindmap"
   },
   "devDependencies": {
-    "@babel/plugin-syntax-import-attributes": "^7.24.6",
+    "@babel/plugin-syntax-import-attributes": "^7.24.7",
     "@cypress/code-coverage": "^3.12.39",
     "@commitlint/cli": "^19.2.1",
     "@idrinth/duplicate-style-check": "^1.1.0",
