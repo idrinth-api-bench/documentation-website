@@ -35,7 +35,7 @@ const Contributor = ({
     </picture>
     <div>
       <h2>
-        <a href={`#${ id }`}>#</a>
+        <a href={`/contributing/contributors#${ id }`}>#</a>
         {' '}
         <ExternalLink to={url} label={name}/>
       </h2>
