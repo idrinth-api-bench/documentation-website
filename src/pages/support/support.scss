@@ -20,6 +20,7 @@
     place-self: end baseline;
   }
 }
+
 @media screen and (width >= 550px) {
   .products {
     grid-template-columns: 1fr 1fr 1fr;
