@@ -42,7 +42,7 @@
     "commitlint-ci": "commitlint --last",
     "commitlint": "commitlint --edit",
     "simple-git-hooks": "simple-git-hooks",
-    "lighthouse": "npm run build && start-server-and-test serve http://localhost:8080 'node tools/lighthouse-report.js'"
+    "lighthouse": "npm run build && node tools/lighthouse-report.js"
   },
   "dependencies": {
     "@uiw/react-head": "^1.0.4",
