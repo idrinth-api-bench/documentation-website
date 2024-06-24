@@ -67,7 +67,7 @@
     "@idrinth-api-bench/rollup-plugin-react-modular-css": "^1.2.3",
     "@idrinth-api-bench/typescript-language-from-yaml": "^1.4.0",
     "@types/chai": "^4.3.16",
-    "@types/mocha": "^10.0.6",
+    "@types/mocha": "^10.0.7",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.2.19",
     "@types/react-router-dom": "^5.3.3",
