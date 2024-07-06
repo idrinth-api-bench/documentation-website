@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '../../components/layout.tsx';
 import ContentUnit from '../../components/content-unit.tsx';
 import Youtube from '../../components/youtube.tsx';
+import Lang from "../../components/lang.tsx";
 
 const Index = () => <Layout
   page='home'
@@ -28,12 +29,16 @@ const Index = () => <Layout
     home.libraries.reusability
     home.libraries.threading
   </ContentUnit>
-  <div class="card">
-    <h2>Summer Retreat</h2> 
-    <iframe frameborder="0" 
-     height="500px" 
-     width="100%" 
-     src="https://calendar.online/04ca1b740ec95ed69088?iframe=true">
-    </iframe></div>
+  <div className="card">
+    <h2>
+      <Lang lnkey='home.calendar'/>
+    </h2>
+    <iframe
+      style={{borderWidth: 0}}
+      height="500px"
+      width="100%"
+      src="https://calendar.online/3c3632e38202b4bf4ec5?iframe=true">
+    </iframe>
+  </div>
 </Layout>;
 export default Index;

@@ -78,6 +78,7 @@ home:
   title: "What does this project do?"
   what: "This project provides an API performance measuring and monitoring framework, that strives to provide the best developer experience possible while keeping it easy to expand and configure."
   why: "This helps to detect performance changes in code in a quick and simple manner."
+  calendar: "Events"
   demo:
     youtube: "Version 2.7.4 Demo"
   benchmark:
