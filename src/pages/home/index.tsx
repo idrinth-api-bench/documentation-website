@@ -28,5 +28,12 @@ const Index = () => <Layout
     home.libraries.reusability
     home.libraries.threading
   </ContentUnit>
+  <div class="card">
+    <h2>Summer Retreat</h2> 
+    <iframe frameborder="0" 
+     height="500px" 
+     width="100%" 
+     src="https://calendar.online/04ca1b740ec95ed69088?iframe=true">
+    </iframe></div>
 </Layout>;
 export default Index;
