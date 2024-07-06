@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../../components/layout.tsx';
 import ContentUnit from '../../components/content-unit.tsx';
 import Youtube from '../../components/youtube.tsx';
-import Calendar from "../../components/calendar.tsx";
+import Calendar from '../../components/calendar.tsx';
 
 const Index = () => <Layout
   page='home'

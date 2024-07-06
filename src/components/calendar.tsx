@@ -45,13 +45,13 @@ const Calendar = ({
     <div>
       <iframe
         id={'calendar_' + children}
-        src={`https://calendar.online/${children}?iframe=true`}
+        src={`https://calendar.online/${ children }?iframe=true`}
         title={title}
         allow={allow.join(';',)}
         referrerPolicy="strict-origin-when-cross-origin"
         allowFullScreen
       ></iframe>
-      <ExternalLink to={`https://calendar.online/${link ?? children}`}/>
+      <ExternalLink to={`https://calendar.online/${ link ?? children }`}/>
     </div>
   </div>;
 };
