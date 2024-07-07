@@ -21,6 +21,7 @@ const CookieConsent = () => {
   const types = [
     'youtube',
     'tracking',
+    'calendar',
   ];
   let wasAllAnswered = true;
   for (const type of types) {

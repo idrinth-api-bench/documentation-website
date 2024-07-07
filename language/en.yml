@@ -580,8 +580,11 @@ cookie-consent:
   description: "We use cookies to ensure you get the best experience on our website."
   accept: "Accept"
   decline: "Decline"
-  custom: "As above"
+  custom: "As chosen"
   service:
+    calendar:
+      title: "Calendar.online"
+      description: "We will automatically load the event calendar to reduce your required clicks."
     tracking:
       title: "Matomo tracking"
       description: "We will track your visit via tracking.bjoern-buettner.me to improve out content."
