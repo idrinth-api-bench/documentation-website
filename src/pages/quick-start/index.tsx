@@ -22,7 +22,7 @@ const Index = () => <Layout
     postfix={'quick-start.step2.result'}
     level={'h2'}
     more={'/usage'}
-    language={'bash'}>npx -p @idrinth/api-bench-cli iabmp</CodeUnit>
+    language={'bash'}>npx -p @idrinth-api-bench/cli iabmp</CodeUnit>
   <CodeUnit
     prefix={'quick-start.step3.description'}
     text={'quick-start.step3.title'}

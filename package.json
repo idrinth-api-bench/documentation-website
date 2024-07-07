@@ -1,7 +1,7 @@
 {
   "name": "@idrinth-api-bench/documentation-website",
   "private": true,
-  "version": "2.7.4",
+  "version": "1.0.5",
   "license": "MIT",
   "type": "module",
   "author": "Björn Büttner",

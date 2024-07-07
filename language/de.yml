@@ -19,10 +19,10 @@ nav:
 
 socials:
   npm:
-    title0: "@idrinth/api-bench auf NPM"
-    text0: "@idrinth/api-bench"
-    title1: "@idrinth/api-bench-cli auf NPM"
-    text1: "@idrinth/api-bench-cli"
+    title0: "@idrinth-api-bench/framework auf NPM"
+    text0: "@idrinth-api-bench/framework"
+    title1: "@idrinth-api-bench/cli auf NPM"
+    text1: "@idrinth-api-bench/cli"
     alt: "NPM"
   docker:
     title0: "idrinth/api-bench-gitlab-runner auf DockerHub"
@@ -46,24 +46,24 @@ socials:
     title: "idrinth-api-bench auf youtube"
     alt: "YouTube"
   slack:
-    title: "@idrinth/api-bench auf slack"
+    title: "@idrinth-api-bench/framework auf slack"
     alt: "Slack"
   linkedin:
-    title: "@idrinth/api-bench auf LinkedIN"
+    title: "@idrinth-api-bench/framework auf LinkedIN"
     alt: "LinkedIn"
   open-sauced:
-    title: "@idrinth/api-bench projects auf OpenSauced"
+    title: "@idrinth-api-bench/framework projects auf OpenSauced"
     alt: "OpenSauced"
 
 code-of-conduct:
   meta:
     title: "Verhaltenskodex"
-    description: "Der Verhaltenskodex für Beitragende des @idrinth/api-bench"
+    description: "Der Verhaltenskodex für Beitragende des @idrinth-api-bench/framework"
 
 home:
   meta:
     title: "Startseite"
-    description: "Willkommen in der Dokumentation für das Framework @idrinth/api-bench"
+    description: "Willkommen in der Dokumentation für das Framework @idrinth-api-bench/framework"
   title: "Was macht das Projekt?"
   what: "Dieses Pojekt bietet ein Framework zur Überprüfung von REST-APIs und Websites auf Änderungen der Antwortzeilen"
   why: "Dies hilft dabei, Leistungsänderungen im Code schnell und einfach zu erkennen"
@@ -88,7 +88,7 @@ home:
 faq:
   meta:
     title: "FAQ"
-    description: "Häufig gestellte Fragen zu @idrinth/api-bench"
+    description: "Häufig gestellte Fragen zu @idrinth-api-bench/framework"
   title: "Häufig gestellte Fragen"
   description: "Wenn Ihre Frage nicht beantwortet wurde, gehen Sie zu Slack, LinkedIn oder GitHub und hinterlassen Sie sie dort. Wir werden uns so schnell wie möglich darum kümmern."
   questions:

@@ -14,9 +14,9 @@ const Header = ({
 }: {window: Window},) => <header>
   <div>
     <NavigationLink id="logo" to="/">
-      <img src={IAB} alt="@idrinth/api-bench"/>
+      <img src={IAB} alt="@idrinth-api-bench"/>
     </NavigationLink>
-    <strong>@idrinth/api-bench</strong>
+    <strong>@idrinth-api-bench</strong>
     <em>v{pkg.version}</em>
   </div>
   <SocialNavigation/>

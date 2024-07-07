@@ -5,8 +5,8 @@ const SocialNavigation = () => <nav aria-label='Social Links Menu'>
   <ul className={'socials'}>
     <SocialLink
       to={[
-        'https://www.npmjs.com/package/@idrinth/api-bench',
-        'https://www.npmjs.com/package/@idrinth/api-bench-cli',
+        'https://www.npmjs.com/package/@idrinth-api-bench/framework',
+        'https://www.npmjs.com/package/@idrinth-api-bench/cli',
       ]}
       label={'npm'}
     />
