@@ -16,6 +16,12 @@ body {
   padding-bottom: 2em;
 }
 
+iframe {
+  border-width: 0;
+  display: block;
+  width: 100%;
+}
+
 h1,
 h2,
 h3,
