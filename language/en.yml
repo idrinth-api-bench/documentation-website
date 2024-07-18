@@ -537,12 +537,6 @@ command:
   or: "or"
   deprecated: "This command is deprecated."
   cli: "Available via the CLI package @idrinth-api-bench/cli and the framework."
-  iabr:
-    description: "runs the current working directory's project if the routes folder is properly setup"
-    arg_1: "Argument 1: threads (default 1)"
-    arg_2: "Argument 2: repetitions (default 1)"
-    arg_3: "Argument 3: language code (default en)"
-    arg_4: "Argument 4: task id, that you want to run only (default all)"
   iabmp:
     description: "creates a new benchmarking project in a directory within the current working directory"
     arg_1: "Argument 1: project name (default: benchmark)"
@@ -555,16 +549,6 @@ command:
   iabgfc:
     description: "generates a test skeleton from an CURL command for a project in the current working directory"
     arg_1: "Argument 1: URL to test"
-  iabcrd:
-    description: "checks all routes for possible issues, so there are no surprises, when actually running the code."
-    arg_1: "Argument 1: language(default: en)"
-  iabrl:
-    description: "runs a load test with the given routes up to a limit of threads. Stops when the limit is reached or an error is found during response validation."
-    arg_1: "Argument 1: threads (default 1)"
-    arg_2: "Argument 2: repetitions (default 1)"
-    arg_3: "Argument 3: language code (default en)"
-    arg_4: "Argument 4: thread increment (default 1)"
-    arg_5: "Argument 5: maximum threads (default 100)"
   iab:
     description: "This command is going to replace all other commands with a  more sensible interface in 3.0.0 and is available from 2.8.0"
     arg_1: "runs a benchmark with all options being optional."
