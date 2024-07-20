@@ -21,11 +21,6 @@ const Usage = () => <Layout
     </p>
   </div>
   <Command
-    shortname={'iabr'}
-    name={'run-benchmark'}
-    deprecated={true}
-  >4</Command>
-  <Command
     shortname={'iabmp'}
     name={'make-benchmark-project'}
     cli={true}
@@ -45,16 +40,6 @@ const Usage = () => <Layout
     name={'generate-benchmark-from-curl'}
     cli={true}
   >1</Command>
-  <Command
-    shortname={'iabcrd'}
-    name={'check-route-definitions'}
-    deprecated={true}
-  >1</Command>
-  <Command
-    shortname={'iabrl'}
-    name={'run-loadtest'}
-    deprecated={true}
-  >5</Command>
   <Command
     name={'iab'}
   >6,
