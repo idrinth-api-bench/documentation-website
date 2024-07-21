@@ -59,9 +59,9 @@ socials:
   open-sauced:
     title: "@idrinth-api-bench/framework projects on OpenSauced"
     alt: "OpenSauced"
-  reddit:
-    title: "@idrinth-api-bench/framework on Reddit"
-    alt: "Reddit"
+  dailydev:
+    title: "@idrinth-api-bench/framework on daily.dev"
+    alt: "daily.dev"
   x:
     title: "@IdrinthAPIBench on X/Twitter"
     alt: "X/Twitter"
