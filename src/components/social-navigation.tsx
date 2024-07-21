@@ -56,8 +56,8 @@ const SocialNavigation = () => <nav aria-label='Social Links Menu'>
       label={'medium'}
     />
     <SocialLink
-      to={'https://www.reddit.com/r/IdrinthApiBench'}
-      label={'reddit'}
+      to={'https://dly.to/ra0ANxPXhwl'}
+      label={'dailydev'}
     />
     <SocialLink
       to={'https://twitter.com/IdrinthApiBench'}
