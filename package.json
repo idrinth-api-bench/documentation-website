@@ -92,7 +92,7 @@
     "lighthouse": "^12.1.0",
     "markdownlint-cli": "^0.41.0",
     "mocha": "^10.6.0",
-    "rollup": "^4.18.1",
+    "rollup": "^4.19.0",
     "rollup-plugin-napi-image": "^0.6.1",
     "@napi-rs/image": "^1.9.2",
     "spellchecker-cli": "^6.2.0",
