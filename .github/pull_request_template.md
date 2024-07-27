@@ -23,6 +23,7 @@ and the points you are not confident about. -->
 - [ ] all new texts are added to the translation files (at least the english one)
 - [ ] tests have been added (if required)
 - [ ] shared code has been extracted in a different file
+- [ ] new texts are easy to read
 
 ## Notes
 
