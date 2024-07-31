@@ -5,7 +5,6 @@ import MainNavigationLink from './main-navigation-link.tsx';
 import {
   MdArrowDropDown,
 } from 'react-icons/md';
-import preventOpenLink from './prevent-open-link.tsx';
 import NavigationLink from './navigation-link.tsx';
 
 const mainNavigationLinks = ({
@@ -26,7 +25,7 @@ const mainNavigationLinks = ({
     aria-controls={`${ ariakey }-menu`}
   >
     <Lang lnkey={lnkey}/>
-    <MdArrowDropDown onClick={preventOpenLink}/>
+    <MdArrowDropDown />
   </NavigationLink>
   <ul aria-labelledby={`dropdown-${ ariakey }`} id={`${ ariakey }-menu`}>{
     items.map((child,) => <MainNavigationLink
