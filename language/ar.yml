@@ -1,22 +1,22 @@
 nav:
-  home: "Home"
-  imprint: "Imprint"
-  sponsors: "Sponsors"
-  contributors: "Contributors"
-  support: "Support"
-  contributing: "Contributing"
-  license: "License"
-  autowiring: "Autowiring"
-  middlewares: "Middlewares"
-  results: "Results"
-  usage: "Usage"
-  logging: "Logging"
-  storage: "Storage"
-  routes: "Routes"
-  quick-start: "Quick Start"
-  faq: "FAQ"
-  code-of-conduct: "Code of Conduct"
-  tools: "Tools"
+  home: "الرئيسية"
+  imprint: "البصمة"
+  sponsors: "الداعمون"
+  contributors: "المساهمين"
+  support: "الدعم الفني"
+  contributing: "للمساهمة"
+  license: "الترخيص"
+  autowiring: "حقن التبعية التلقائي"
+  middlewares: "الوسائط"
+  results: "النتائج"
+  usage: "الاستخدام"
+  logging: "التسجيل"
+  storage: "التخزين"
+  routes: "المسارات"
+  quick-start: "انطلاقة سريعة"
+  faq: "الأسئلة الأكثر شيوعاً"
+  code-of-conduct: "مدونة قواعد السلوك"
+  tools: "الأدوات"
 
 socials:
   npm:
@@ -68,130 +68,130 @@ socials:
 
 code-of-conduct:
   meta:
-    title: "Code of Conduct"
-    description: "The Contributor's Code of Conduct for @idrinth-api-bench/framework"
+    title: "مدونة قواعد السلوك"
+    description: "مدونة قواعد السلوك للمساهمين في اطار العمل @idrinth-api-bench/framework"
 
 home:
   meta:
-    title: "Home"
-    description: "Welcome to the documentation for the framework @idrinth-api-bench/framework"
-  title: "What does this project do?"
-  what: "This project provides an API performance measuring and monitoring framework, that strives to provide the best developer experience possible while keeping it easy to expand and configure."
-  why: "This helps to detect performance changes in code in a quick and simple manner."
-  calendar: "Events"
+    title: "الرئيسية"
+    description: "مرحباً بكم في مراجع توثيق اطار العمل @idrinth-api-bench/framework "
+  title: "ماذا يفعل هذا المشروع؟"
+  what: "هذا المشروع يوفر اطار عمل لقياس ومراقبة اداء واجهة برمجة التطبيقات, الذي يسعى إلى توفير أفضل تجربة ممكنة للمطور مع الحفاظ على سهولة التوسع والضبط"
+  why: "يقدم اطار العمل المساعدة في كشف التغيرات في اداء الكود بسرعة وسهولة "
+  calendar: "احداث"
   demo:
-    youtube: "Version 2.7.4 Demo"
+    youtube: "نسخة 2.7.4 تجريبية"
   benchmark:
-    title: "Why use a Benchmark Runner?"
-    microservices: "Given that the amount of APIs increase by moving to microservices, we need a way to determine if changes to a service's response times are related to code changes."
-    purpose: "For this purpose a defined load with repeatable requests with a medium amount of checks seems the most useful."
+    title: "لماذا استخدم مشغل قياس مقارن؟ "
+    microservices: "نظراً للازدياد في كمية واجهات تطبيق البرامج بسبب الانتقال الى خدمات مصغرة (مايكروسيرفسيز), هناك الحاجة لتحديد اذا ما كان التغيير في زمن الاستجابة لخدمة معينة نابع من تغييرات في الكود"
+    purpose: "لأجل هذا الهدف, حمل معرف مع طلبات متكررة بالاضافة الي كمية متوسطة من الفحص تبدو الانسب "
   load-test:
-    title: "Why use a Load Test Runner?"
-    microservices: "For planning and scaling purposes, we need to know how many users we can handle with a given amount of microservice instances."
-    purpose: "For this purpose a defined growing load with repeatable requests with few checks seems the most useful."
+    title: "لماذا استخدم مشغل فحص الاحمال؟"
+    microservices: "من أجل التخطيط والتوسع, هناك الحاجة لمعرفة كمية المستخدمين الممكن استعيابها حسب كمية الخدمات المصغرة"
+    purpose: "لأجل هذا الهدف, حمل متنامي معرف مع طلبات متكررة بالاضافة الى بعض الفحوصات تبدو الانسب"
   content-test:
-    title: "Why use a Content Test Runner?"
-    microservices: "With the amount of APIs skyrocketing, the need to test them quickly and with as little effort as possible is required."
-    purpose: "For this purpose repeatable requests with many checks seems the most useful."
+    title: "لماذا استخدم مشغل فحص المحتوى؟"
+    microservices: "مع تنامي كمية واجهات تطبيق البرامج, هناك حاجة لفحص سريع وبأقل مجهود"
+    purpose: "لأجل هذا الهدف, طلبات متكررة مع العديد من الفحوصات تبدو الانسب"
   libraries:
-    title: "Regarding existing libraries"
-    description: "Other tools are all either untouched for quite a while and don't provide type definitions for typescript. This makes them less desirable when working with projects where the better static code check is a huge boost in development speed."
-    reusability: "A huge benefit of using this framework is writing route definitions once and reusing them across all desired test types."
-    threading: "Additionally, this tool separates the validation thread from the thread processing the actual requests to further minimise the effect of complicated validations or huge response bodies on the data gathering."
+    title: "حول المكتبات الموجودة مسبقاً"
+    description: "تظل الأدوات الأخرى دون تعديل لفترة طويلة ولا توفر تعريفات النوع لتايبسكريبت. وهذا يجعلها أقل جاذبية عند العمل مع المشاريع حيث يكون فحص الكود الثابت الأفضل بمثابة دفعة كبيرة لسرعة التطوير"
+    reusability: "إن إحدى الفوائد الكبيرة لاستخدام هذا الإطار هي كتابة تعريفات المسار مرة واحدة وإعادة استخدامها عبر جميع أنواع الاختبار المطلوبة"
+    threading: "بالإضافة إلى ذلك، تفصل هذه الأداة خيط التحقق عن الخيط الذي يعالج الطلبات الفعلية لتقليل تأثير عمليات التحقق المعقدة أو هيئات الاستجابة الضخمة على جمع البيانات"
 
 youtube:
-  on: "See video on YouTube"
-  content: "Watch more about this"
-  player: "YouTube Video Player"
+  on: "شاهد فيديو على اليوتيوب"
+  content: "شاهد المزيد عن الموضوع"
+  player: "مشغل فيديو يوتيوب"
 
 faq:
   meta:
-    title: "FAQ"
-    description: "frequently asked questions about @idrinth-api-bench/framework"
-  title: "Frequently Asked Questions"
-  description: "If your question is not yet answered, head over to slack, LinkedIn or GitHub and leave it there. We will address it as quickly as possible."
+    title: "الأسئلة الأكثر شيوعاً"
+    description: "الأسئلة الأكثر شيوعاً حول اطار العمل @idrinth-api-bench/framework"
+  title: "الأسئلة الأكثر شيوعاً"
+  description: "إذا لم تجد إجابة لسؤالك بعد، فانتقل إلى سلاك أو لينكدان أو جيتهاب واضفه هناك. وسنعمل على الرد عليه في أسرع وقت ممكن"
   questions:
-    title_1: "What is benchmarking?"
-    description_1: "Benchmarking is the process of measuring software performance against established best practices."
-    title_2: "What is load testing?"
-    description_2: "Load testing evaluates system behaviour under peak or anticipated load conditions."
-    title_3: "How long does it take to write a test?"
-    description_3: "The average time to write a test is 2-3 minutes. For beginners, it is about 15 minutes."
-    title_4: "How long does it take to setup?"
-    description_4: "By following the Quick Start, it only takes a few minutes!"
-    title_5: "Is the project in productive use?"
-    description_5: "Yes, it has been for most of it's lifetime."
-    title_6: "Is there any additional schooling material available?"
-    description_6: "Not yet, it's actively being worked on."
-    title_7: "Is the framework free to use?"
-    description_7: "Yes, entirely. Even support via GitHub is free."
-    title_8: "How fast is the public support?"
-    description_8: "We strive to react within 24 hours and latest within 48 hours."
+    title_1: "ما هو القياس المقارن؟"
+    description_1: "القياس المقارن هو عملية قياس اداء البرنامج ومقارنته مع افضل الممارسات الموجودة"
+    title_2: "ما هي عملية فحص الاحمال؟"
+    description_2: "يقوم فحص الاحمال بتقييم سلوك النظام في ظل ظروف الذروة أو كمية الاحمال المتوقعة"
+    title_3: "كم من الوقت يلزم لكتابة فحص؟"
+    description_3: "الوقت المتوسط لكتابة فحص هو 2-3 دقائق. للمبتدئين حوالي 15 دقيقة"
+    title_4: "كم يلزم من الوقت للإعداد؟"
+    description_4: "باتباع التعليمات في قسم البدء السريع, بضع دقائق فقط"
+    title_5: "هل المشروع قيد الاستخدام؟"
+    description_5: "نعم, في الغالبية العظمى من حياة المشروع"
+    title_6: "هل هناك أي مواد دراسية إضافية متاحة؟"
+    description_6: "ليس بعد, اننا نعمل على ذلك حالياً"
+    title_7: "هل يمكن استعمال اطار العمل بدون مقابل؟"
+    description_7: "نعم, كلياً. بالاضافة لدعم فني مجاني عن طريق جيتهاب"
+    title_8: "كم من الوقت يلزم للحصول على اجابة من الدعم الفني العام؟"
+    description_8: "نحن نسعى للتفاعل خلال 24 ساعة مع اي توجه, الحد الاقصى خلال 48 ساعة"
 
 imprint:
   meta:
-    title: "Imprint"
-    description: "Imprint and privacy statements for this website"
+    title: "البصمة"
+    description: "بيانات البصمة والخصوصية لهذا الموقع"
 
 sponsors:
   meta:
-    title: "Sponsors | Contributing"
-    description: "The following businesses and companies are sponsoring the development of api-bench by providing time, money or necessary tools."
-  title: "Sponsors"
-  description: "The following businesses and companies support the development of @idrinth-api-bench/framework. This means they provide time, money or necessary tools for the development."
+    title: "الداعمون | المساهمة"
+    description: "تقوم الشركات والمؤسسات التالية برعاية تطوير اطار العمل من خلال توفير الوقت أو المال أو الأدوات اللازمة"
+  title: "الداعمون"
+  description: "تدعم الشركات والمؤسسات التالية تطوير اطار العمل. وهذا يعني أنها توفر الوقت أو المال أو الأدوات اللازمة للتطوير"
   bjoernbuettner:
-    intro: "Björn Büttner is a Germany based business, that provides custom development and hosting services in a web context. Additionally to that some training and consulting are offered, that do include this project for performance monitoring."
-    sponsoring: "The business supports the project by hosting this documentation site for free and supplying the domain."
+    intro: "بيورن بوتنر هي شركة مقرها ألمانيا، تقدم خدمات التطوير والاستضافة المخصصة في سياق الويب. بالإضافة إلى ذلك، يتم تقديم بعض التدريبات والاستشارات، والتي تتضمن هذا المشروع لمراقبة الأداء"
+    sponsoring: "تدعم الشركة المشروع من خلال استضافة موقع التوثيق هذا مجانًا وتوفير النطاق"
   jungwild:
-    intro: "jungwild is a Germany based recruiting agency, that uses the framework for testing their own APIs."
-    sponsoring: "The agency provides some time for testing and developing changes of the framework before release."
+    intro: "يونجوايلد هي وكالة توظيف مقرها ألمانيا، تستخدم الإطار لاختبار واجهات برمجة التطبيقات الخاصة بها"
+    sponsoring: "تخصص الوكالة بعض الوقت لاختبار وتطوير تغييرات اطار العمل قبل الإصدار"
 
 contributors:
   meta:
-    title: "Contributors | Contributing"
-    description: "These are the people who made the site and framework what they are today."
-  title: "Contributors"
-  description: "A big thank you to everyone who contributed. Below are the ones who contributed code, but other contributions are as valuable."
-  code_contributors: "Code Contributors"
-  none_code_contributors: "None Code Contributors"
+    title: "المساهمون | المساهمة"
+    description: "هؤلاء هم الأشخاص الذين اوصلوا الموقع واطار العمل الى ما هما عليه اليوم"
+  title: "المساهمون"
+  description: "شكرًا جزيلاً لكل من ساهم. فيما يلي الأشخاص الذين ساهموا في الكود، بالاضافة الى المساهمات الأخرى والتي لا تقل قيمة"
+  code_contributors: "مساهمون في تطوير الكود"
+  none_code_contributors: "مساهمون بشكل آخر"
 
 support:
   meta:
-    title: "Support"
-    description: "Support options for the @idrinth-api-bench/framework framework."
-  title: "Support"
-  description: "No matter who you are, you can get support via GitHub issues and discussions. Support reaction times depend on the availability of volunteers, so it may take a day or two."
+    title: "الدعم الفني"
+    description: "خيارات الدعم الفني لاطار @idrinth-api-bench."
+  title: "الدعم الفني"
+  description: "بغض النظر عن هويتك، يمكنك الحصول على الدعم عبر مشكلات ومناقشات جيتهاب. تعتمد أوقات استجابة الدعم على توافر المتطوعين، لذا قد يستغرق الأمر يومًا أو يومين"
   commercial:
-    title: "Commercial support"
-    description: "If your closed source software needs support, that can't be handled via the above means, Björn Büttner also provides paied support on a business basis. You can reach the business via:"
+    title: "دعم فني تجاري"
+    description: "اذا كان برنامجك مغلق المصدر يحتاج للدعم الفني, لا يمكن معالجة الأمر بالوسائط المذكورة اعلاه, بيورن بوتنر يوفر دعم فني مدفوع على أساس مهني. بالامكان التواصل معنا عن طريق:"
   training:
-    title: "Professional Training"
-    description: "Training is provided by Björn Büttner on a business basis for organisations. For pricing and scheduling contact the business at:"
+    title: "التدريب المهني"
+    description: "التدريب المهني يتم عن طريق بيورن بوتنر على أساس مهني للمؤسسات. للتكلفة و الحجز يرجى الاتصال عن طريق:"
 
 404:
   meta:
-    title: "404 NOT FOUND"
-    description: "The page you desired has not been found"
-  title: "404 Not Found"
-  description: "Sadly the URL you entered couldn't be found."
+    title: "404 لم يتم العثور"
+    description: "لم يتم العثور على الصفحة المطلوبة"
+  title: "404 لم يتم العثور"
+  description: "عذراً, لم يتم العثور على الرابط الذي ادخلته"
 
 contributing:
   meta:
-    title: "Contributing"
-    description: "Contribution guidelines for the framework @idrinth-api-bench/framework"
-  title: "Contributing Guidelines"
-  description: "Any and all contributions are encouraged."
-  youtube: "Structure Overview on YouTube"
+    title: "المساهمة"
+    description: "ارشادات المساهمة لاطار العمل @idrinth-api-bench/framework"
+  title: "ارشادات المساهمة"
+  description: "نحن نشجع اي شكل من اشكال المساهمة"
+  youtube: "نظرة عامة على بنية المشروع على يوتيوب"
   structure:
-    title: "Structure"
-    description: "The project is an organisation grouped into multiple repositories, for example documentation-website, framework, history-microservice, CLI, mindmap, history-website. You can find more detailed instructions for the specific part in the corresponding folder's readme."
+    title: "بنية المشروع"
+    description: "المشروع عبارة عن منظمة مجمعة في مستودعات متعددة، على سبيل المثال، موقع الويب الخاص بالوثائق، والإطار، والسجلات المصغرة، وواجهة سطر الأوامر، والخريطة الذهنية، والموقع الإلكتروني الخاص بالسجلات. يمكنك العثور على تعليمات أكثر تفصيلاً للجزء المحدد في ملف -اقرأني- الخاص بالمجلد المقابل"
   issues:
-    title: "Issues"
-    description: "Any idea and bug report is considered a contribution. Not only do they help improving the code base, they help other people to get more use out of this framework. Please try to stick to the format of predefined issue types to make it easier to filter and handle for anyone interested in the topic."
+    title: "المشاكل"
+    description: "تعتبر أي فكرة أو تقرير عن خطأ بمثابة مساهمة. فهي لا تساعد فقط في تحسين قاعدة التعليمات البرمجية، بل إنها تساعد الآخرين على الاستفادة بشكل أكبر من هذا الإطار. يرجى محاولة الالتزام بتنسيق أنواع المشكلات المحددة مسبقًا لتسهيل عملية الفلترة والتعامل مع أي شخص مهتم بالموضوع"
   code:
-    title: "Code"
-    style: "The style guidelines are provided via eslint. Please try to optimise code for readability, since code will be read way more often than it will be changed."
-    breaking: "While adding functionality, keep in mind to break existing interfaces, entry points and functionality only if absolutely necessary."
+    title: "الكود"
+    style: "يتم توفير إرشادات الأسلوب عبر ايسلنت. يرجى محاولة تحسين الكود من أجل سهولة القراءة، حيث سيتم قراءة الكود أكثر بكثير من تغييره"
+    breaking: "عند إضافة وظيفة في الكود، ضع في اعتبارك ان لا تحدث تغييراً في الواجهات ونقاط الدخول والوظائف الموجودة الا إذا كان ذلك ضروريًا للغاية"
     picking:
       title: "Picking the right issue"
       labels: "Issues that are good for relatively new coders are marked as `Good first issue`, issues marked as `help wanted` require a bit more knowledge about the project."
@@ -559,12 +559,12 @@ command:
     arg_6: "runs a stress test for the desired duration in seconds with all options being optional."
 
 cookie-consent:
-  title: "We use cookies"
-  open: "Settings"
-  description: "We use cookies to ensure you get the best experience on our website."
-  accept: "Accept"
-  decline: "Decline"
-  custom: "As chosen"
+  title: "استخدام ملفات تعريف الارتباط"
+  open: "الاعدادات"
+  description: "نستخدم ملفات تعريف الارتباط لضمان حصولك على افضل تجربة في موقعنا"
+  accept: "موافقة"
+  decline: "رفض"
+  custom: "كما تم اختياره"
   service:
     calendar:
       title: "Calendar.online"
@@ -573,12 +573,12 @@ cookie-consent:
       title: "Matomo tracking"
       description: "We will track your visit via tracking.bjoern-buettner.me to improve out content."
     youtube:
-      title: "YouTube"
+      title: "يوتيوب"
       description: "We will load videos from www.youtube-nocookie.com to directly play on the site."
 
 general:
-  language-switch: "Language switch"
-  more: "More here"
+  language-switch: "تغيير اللغة"
+  more: "المزيد"
 
 languages:
   en: "English"
