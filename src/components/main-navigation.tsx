@@ -13,7 +13,7 @@ const MainNavigation = () => <nav aria-label='Main Menu'>
     >/quick-start</MainNavigationLink>
     <MainNavigationLinks
       ariakey={'contributing'}
-      lnkey={'nav.contributors'}
+      lnkey={'nav.contributing'}
       items={[
         'contributors',
         'sponsors',
