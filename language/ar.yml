@@ -409,78 +409,78 @@ middlewares:
 
 results:
   meta:
-    title: "Results | Usage"
-    description: "The framework @idrinth-api-bench/framework provides default result handlers and allows for additional custom result handlers"
-  title: "Results"
-  description: "By default, all possible result formats are provided. The files are created in the application root, but that can be overwritten programmatically."
+    title: "النتائج | الاستعمال"
+    description: "يوفر اطار العمل معالجات نتائج افتراضية ويسمح بمعالجات نتائج مخصصة اضافية "
+  title: "النتائج"
+  description: "افتراضيًا، يتم توفير جميع تنسيقات النتائج الممكنة. يتم إنشاء الملفات في جذر التطبيق، ولكن يمكن تخطيها برمجيًا"
   csv:
-    description: "This provides a file, that can easily opened by excel or handled programmatically."
+    description: "يوفر هذا ملفًا يمكن فتحه بسهولة بواسطة اكسل أو التعامل معه برمجيًا"
   html:
-    description: "This provides a simple HTML file, that could be sent by email for example."
+    description: "يوفر هذا ملف اتش تي ام ال بسيطًا، يمكن إرساله عبر البريد الإلكتروني على سبيل المثال"
   cli:
-    description: "This provides a small table in the command line, that shows most of the data."
+    description: "يوفر هذا جدولًا صغيرًا في سطر الأوامر، والذي يعرض معظم البيانات"
   json:
-    description: "This provides a file easily handled via other software. By default, it is not formatted for readability."
+    description: "يوفر هذا ملفًا يمكن التعامل معه بسهولة عبر برامج أخرى. بشكل افتراضي، لا يتم تنسيقه لسهولة القراءة"
   xray:
     title: "XRay on Jira"
-    description: "We provide two XRay handlers, that can be activated via ENV variables. If you don't set all of the environment variables, the respective reporting will be skipped."
-    shared: "Both providers need XRAY_ENDPOINT and XRAY_TEST_PLAN_KEY to be set. The first pointing to your Jira root URL, the second being the exact id of your test plan, for example TEST-123."
-    cloud: "If you are hosting in the cloud XRAY_CLIENT_ID and XRAY_CLIENT_SECRET are also required to make a login possible."
-    onpremise: "If you are hosting on premise, provide login data via XRAY_USER_NAME and XRAY_PASSWORD instead."
-    limitations: "Ensure the test id in your route id starts with a hash sign, e.g., #TEST-876. Failing to follow this format may result in errors or unrecognised test ids during the XRay processing."
+    description: "نحن نوفر معالجين لـ اكس راي، يمكن تنشيطهما عبر متغيرات ENV. إذا لم تقم بتعيين جميع متغيرات البيئة، فسيتم تخطي التقارير ذات الصلة"
+    shared: "يحتاج كلا المزودين إلى تعيين XRAY_ENDPOINT وXRAY_TEST_PLAN_KEY. يشير الأول إلى عنوان URL الجذر لـ Jira، بينما يشير الثاني إلى المعرف الدقيق لخطة الاختبار الخاصة بك، على سبيل المثال TEST-123"
+    cloud: "إذا كنت تستضيف في السحابة، فإن XRAY_CLIENT_ID وXRAY_CLIENT_SECRET مطلوبان أيضًا لإتاحة تسجيل الدخول"
+    onpremise: "إذا كنت تستضيف محليًا، فقم بتوفير بيانات تسجيل الدخول عبر XRAY_USER_NAME وXRAY_PASSWORD بدلاً من ذلك"
+    limitations: "تأكد من أن معرف الاختبار في معرف المسار الخاص بك يبدأ بعلامة تصنيف، على سبيل المثال، #TEST-876. قد يؤدي عدم اتباع هذا التنسيق إلى حدوث أخطاء أو عدم التعرف على معرفات الاختبار أثناء معالجة XRay"
   custom:
-    title: "Custom Results"
-    description: "You can provide a custom reporter instance as part of your configuration in programmatically accessing the framework. It will be called with the complete result after all result modifiers have modified the result."
+    title: "النتائج المخصصة"
+    description: "يمكنك توفير مثيل لمراسل مخصص كجزء من اعداداتك في الوصول إلى الإطار برمجيًا. سيتم استدعاؤه بالنتيجة الكاملة بعد أن تقوم جميع تعديلات النتيجة بتعديل النتيجة"
 
 usage:
   meta:
-    title: "Usage"
-    description: "Basic usage information for the framework @idrinth-api-bench/framework"
-  title: "Usage"
+    title: "الاستخدام"
+    description: "معلومات اساسية عن استخدام اطار العمل"
+  title: "الاستخدام"
   binaries:
-    title: "Binaries"
-    description: "The following binaries are available for use via scripts in your package.json."
+    title: "الملفات البينارية"
+    description: "الملفات البينارية التالية متاحة للاستخدام عبر البرامج النصية في package.json الخاص بك"
   programmatically:
-    title: "Programmatically"
-    description: "Basically require main/include main and supply the executor method with required parameters. Tasks defined in src/routes directories before, before_task, before_each, main, after_each, after_task, and after will be used to automatically fill the Job processed by the executor. Automatic filling only happens when there are no tasks provided to the function."
+    title: "برمجياً"
+    description: "تتطلب في الأساس main/include main وتزود طريقة المنفذ بالمعلمات المطلوبة. سيتم استخدام المهام المحددة في أدلة src/routes قبل، وقبل_task، وقبل_each، وmain، وبعد_each، وبعد_task، وبعد لملء الوظيفة التي يعالجها المنفذ تلقائيًا. يحدث الملء التلقائي فقط عندما لا توجد مهام مقدمة للوظيفة"
 
 logging:
   meta:
-    title: "Logging | Usage"
-    description: "Information about logging usage and support of the framework @idrinth-api-bench/framework"
-  title: "Logging"
-  description: "Any logger that either implements the interface or has a wrapper is an option. Wrappers for pino and winston are available."
+    title: "التسجيل | الاستخدام"
+    description: "معلومات حول استخدام التسجيل ودعم اطار العمل"
+  title: "التسجيل"
+  description: "أي مسجل ينفذ الواجهة أو يحتوي على غلاف هو خيار. تتوفر غلافات لـ pino و winston"
   used:
-    title: "Logging levels used"
-    description: "Most log entries are debug level, with the major steps being written to info. Trace is currently not used but may be used for detailed argument printing at some point."
+    title: "مستويات التسجيل المستخدمة"
+    description: "معظم إدخالات السجل هي على مستوى التصحيح، مع كتابة الخطوات الرئيسية في المعلومات. لا يتم استخدام التعقب حاليًا ولكن يمكن استخدامه لطباعة الحجج التفصيلية في مرحلة ما."
   custom:
-    title: "Custom Logger"
-    final: "For ease of use, a wrapper is provided as well, that only requires a log method to be implemented."
-    description: "You can implement the logger interface below and provide any logger you want to next to the already provided ones."
+    title: "مسجل مخصص"
+    final: "لتسهيل الاستخدام، يتم توفير غلاف أيضًا، والذي يتطلب فقط تنفيذ طريقة السجل"
+    description: "يمكنك تنفيذ واجهة المسجل أدناه وتوفير أي مسجل تريده بجوار المسجلات المقدمة بالفعل"
 
 storage:
   meta:
-    title: "Storage | Usage"
-    description: "Information about the provided MySQL storage and how to create custom storage implementations for @idrinth-api-bench/framework"
-  title:  "Storage"
-  description: "Storage classes store each finished set of the run. By default, nothing is stored, but a MySQL storage is provided for those wanting it."
+    title: "التخزين | الاستعمال"
+    description: "معلومات حول مساحة تخزين ماي اس كيو ال المقدمة وكيفية إنشاء تنفيذات تخزين مخصصة لاطار العمل"
+  title:  "التخزين"
+  description: "تخزن فئات التخزين كل مجموعة مكتملة من التشغيل. بشكل افتراضي، لا يتم تخزين أي شيء، ولكن يتم توفير تخزين ماي اس كيو ال لأولئك الذين يريدون ذلك"
   experimental:
-    title: "Experimental"
-    description: "We are providing experimental storage support for MSSQL and Postgres starting with 2.8.0. These implementations are not yet well tested."
+    title: "تخزين تجريبي"
+    description: "نحن نقدم دعمًا تجريبيًا للتخزين لـ MSSQL وPostgres بدءًا من 2.8.0. لم يتم اختبار هذه التطبيقات جيدًا بعد"
   custom:
-    title: "Custom Storage"
-    description: "To provide a custom storage, implement the interface below. The method will be called once per task."
+    title: "تخزين مخصص"
+    description: "لتوفير مساحة تخزين مخصصة، قم بتنفيذ الواجهة أدناه. سيتم استدعاء الطريقة مرة واحدة لكل مهمة"
 
 routes:
   meta:
-    title: "Routes | Usage"
-    description: "Information about how to create test route definitions with the framework @idrinth-api-bench/framework"
-  title: "Routes"
-  description: "Routes are build as configuration objects, that must be default-exported or provided via module.exports and be in a Javascript file. The object is wrapped in a function to allow environment injection, see below for an example."
+    title: "المسارات | الاستخدام"
+    description: "معلومات حول كيفية إنشاء تعريفات مسارات الاختبار باستخدام اطار العمل"
+  title: "المسارات"
+  description: "يتم إنشاء المسارات ككائنات تكوين، والتي يجب تصديرها افتراضيًا أو توفيرها عبر module.exports ويجب أن تكون في ملف Javascript. يتم تغليف الكائن في دالة للسماح بحقن البيئة، انظر أدناه للحصول على مثال"
   example:
-    title: "Example"
-    description: "The code below defines a request to a URL from the environment with GET."
-    middleware: "To apply middlewares add both the pre and post properties as shown in the example. Then proceed to pass in your middleware functions to be executed."
+    title: "مثال"
+    description: "يقوم الكود أدناه بتعريف طلب إلى عنوان URL من البيئة باستخدام GET"
+    middleware: "لتطبيق البرامج الوسيطة، أضف كلًا من الخاصيتين السابقة واللاحقة كما هو موضح في المثال. ثم انتقل إلى تمرير وظائف البرامج الوسيطة التي تريد تنفيذها"
 
 quick-start:
   meta:
@@ -574,7 +574,7 @@ cookie-consent:
       description: "We will track your visit via tracking.bjoern-buettner.me to improve out content."
     youtube:
       title: "يوتيوب"
-      description: "We will load videos from www.youtube-nocookie.com to directly play on the site."
+      description: "سنقوم بتحميل مقاطع الفيديو من www.youtube-nocookie.com لتشغيلها مباشرة على الموقع"
 
 general:
   language-switch: "تغيير اللغة"
