@@ -52,7 +52,7 @@
     "react-icons": "^5.2.1",
     "react-router-dom": "^6.24.1",
     "react-syntax-highlighter": "^15.5.0",
-    "the-new-css-reset": "^1.11.2",
+    "the-new-css-reset": "^1.11.3",
     "window": "^4.2.7",
     "@idrinth-api-bench/assets": "https://github.com/idrinth-api-bench/assets",
     "@idrinth-api-bench/mindmap": "https://github.com/idrinth-api-bench/mindmap"
