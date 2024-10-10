@@ -59,7 +59,7 @@
   },
   "devDependencies": {
     "@babel/plugin-syntax-import-attributes": "^7.24.7",
-    "@cypress/code-coverage": "^3.12.41",
+    "@cypress/code-coverage": "^3.13.4",
     "@commitlint/cli": "^19.5.0",
     "@idrinth/duplicate-style-check": "^1.1.0",
     "@idrinth-api-bench/react-file-based-routes": "^1.3.0",
