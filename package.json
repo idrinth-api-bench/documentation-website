@@ -95,7 +95,7 @@
     "rollup": "^4.24.0",
     "rollup-plugin-napi-image": "^0.6.1",
     "@napi-rs/image": "^1.9.2",
-    "spellchecker-cli": "^6.2.0",
+    "spellchecker-cli": "^7.0.0",
     "start-server-and-test": "^2.0.4",
     "simple-git-hooks": "^2.11.1",
     "stylelint": "^16.9.0",
