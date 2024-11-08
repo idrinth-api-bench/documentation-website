@@ -90,7 +90,7 @@
     "http-server": "^14.1.1",
     "knip": "^5.36.3",
     "lighthouse": "^12.1.0",
-    "markdownlint-cli": "^0.41.0",
+    "markdownlint-cli": "^0.42.0",
     "mocha": "^10.8.2",
     "rollup": "^4.24.0",
     "rollup-plugin-napi-image": "^0.6.1",
