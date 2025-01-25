@@ -5,7 +5,8 @@ import languageKey from '../locales/language-key.ts';
 
 interface ToolType {
   name: string;
-  link: string
+  link: string;
+  color?: string; 
 }
 
 const Tool = ({

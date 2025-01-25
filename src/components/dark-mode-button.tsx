@@ -32,13 +32,11 @@ const DarkModeButton = ({
   ] = useState<boolean>(setInitialDarkMode(),);
 
   useEffect(() => {
-    document.getElementsByTagName('html',)[FIRST_ELEMENT].classList.add(
-      isDarkMode ? 'dark-mode' : 'light-mode',
-    );
-    document.getElementsByTagName('html',)[FIRST_ELEMENT].classList.remove(
-      ! isDarkMode ? 'dark-mode' : 'light-mode',
-    );
-  }, [ isDarkMode, ],);
+    const htmlElement = document.getElementsByTagName('html')[FIRST_ELEMENT];
+    htmlElement.classList.add(isDarkMode ? 'dark-mode' : 'light-mode');
+    htmlElement.classList.remove(!isDarkMode ? 'dark-mode' : 'light-mode');
+    htmlElement.style.setProperty('--global-opacity', isDarkMode ? '0.8' : '1');
+  }, [isDarkMode]);
 
   const toggleLightDarkMode = () => {
     window.localStorage.setItem('dark-mode', JSON.stringify(! isDarkMode,),);

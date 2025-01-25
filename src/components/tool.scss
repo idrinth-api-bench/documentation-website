@@ -1,16 +1,37 @@
+:root {
+  --tool-bg-light: #f9f9f9;
+  --tool-bg-dark: #2e2e2e;
+  --tool-text-light: #000;
+  --tool-text-dark: #fff;
+  --highlight-color: #007bff; 
+}
+
+.dark-mode {
+  --tool-bg: var(--tool-bg-dark);
+  --tool-text: var(--tool-text-dark);
+}
+
+.light-mode {
+  --tool-bg: var(--tool-bg-light);
+  --tool-text: var(--tool-text-light);
+}
+
 .tool {
   display: grid;
   grid-template-columns: min(200px, 50%) auto;
-  background: rgb(0 0 0 / 10%);
+  background-color: var(--tool-bg);
+  color: var(--tool-text);
   row-gap: 0.5em;
   border-radius: 1em 0 0 1em;
+  padding: 1em;
+  transition: background-color 0.3s, color 0.3s;
 
   > p {
     padding: 0.5em;
   }
 
   > h2 {
-    background: rgb(0 0 0 / 10%);
+    background-color: var(--tool-bg);
     border-radius: 1em 0 0 1em;
     border-right: 1px solid var(--highlight-color);
     padding-right: 0.5em;

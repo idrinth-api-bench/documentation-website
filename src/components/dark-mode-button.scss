@@ -1,28 +1,51 @@
+:root {
+  --button-bg-light: #fff;
+  --button-bg-dark: #333;
+  --button-icon-light: #000;
+  --button-icon-dark: #fff;
+}
+
+.dark-mode {
+  --button-bg: var(--button-bg-dark);
+  --button-icon: var(--button-icon-dark);
+}
+
+.light-mode {
+  --button-bg: var(--button-bg-light);
+  --button-icon: var(--button-icon-light);
+}
+
 .theme-toggle-btn {
   align-items: center;
   border-radius: 50%;
   justify-content: center;
   padding: 5px;
+  background-color: var(--button-bg);
+  color: var(--button-icon);
+  transition: background-color 0.3s, color 0.3s;
 
   &:hover {
     cursor: pointer;
+    background-color: var(--button-icon);
+    color: var(--button-bg);
   }
 
   & > svg {
     height: 25px;
     width: 25px;
+    transition: fill 0.3s;
   }
 
-  @media only screen and (width >= 600px) {
+  @media only screen and (min-width: 600px) {
     grid-column: 2;
   }
 
-  @media only screen and (width >= 900px) {
+  @media only screen and (min-width: 900px) {
     grid-column: 3;
     grid-row: 1 / 3;
   }
 
-  @media only screen and (width >= 1250px) {
+  @media only screen and (min-width: 1250px) {
     grid-column: 4;
   }
 }
