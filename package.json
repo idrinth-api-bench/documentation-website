@@ -76,7 +76,7 @@
     "@vitejs/plugin-react": "^4.3.3",
     "babel-plugin-istanbul": "^7.0.0",
     "c8": "^10.1.2",
-    "chai": "^5.1.1",
+    "chai": "^5.2.0",
     "chrome-launcher": "^1.1.2",
     "cypress": "^14.0.0",
     "cypress-split": "^1.24.0",
