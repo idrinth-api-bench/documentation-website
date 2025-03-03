@@ -89,7 +89,7 @@
     "fta-cli": "^2.0.0",
     "http-server": "^14.1.1",
     "knip": "^5.36.3",
-    "lighthouse": "^12.3.0",
+    "lighthouse": "^12.4.0",
     "markdownlint-cli": "^0.43.0",
     "mocha": "^11.1.0",
     "rollup": "^4.24.0",
