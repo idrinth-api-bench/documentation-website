@@ -97,7 +97,7 @@
     "@napi-rs/image": "^1.9.2",
     "spellchecker-cli": "^7.0.0",
     "start-server-and-test": "^2.0.10",
-    "simple-git-hooks": "^2.11.1",
+    "simple-git-hooks": "^2.12.1",
     "stylelint": "^16.13.2",
     "stylelint-config-standard": "^37.0.0",
     "ts-node": "^10.9.1",
