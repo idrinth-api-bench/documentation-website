@@ -99,7 +99,7 @@
     "start-server-and-test": "^2.0.10",
     "simple-git-hooks": "^2.11.1",
     "stylelint": "^16.13.2",
-    "stylelint-config-standard": "^37.0.0",
+    "stylelint-config-standard": "^38.0.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.7.3",
     "vite": "^6.0.11"
