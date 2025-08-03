@@ -86,7 +86,7 @@
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.18",
     "eslint-plugin-json": "^4.0.0",
-    "fta-cli": "^2.0.0",
+    "fta-cli": "^3.0.0",
     "http-server": "^14.1.1",
     "knip": "^5.36.3",
     "lighthouse": "^12.3.0",
