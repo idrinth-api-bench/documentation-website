@@ -79,7 +79,7 @@
     "chai": "^5.1.1",
     "chrome-launcher": "^1.1.2",
     "cypress": "^14.0.0",
-    "cypress-split": "^1.24.0",
+    "cypress-split": "^1.24.14",
     "dotenv": "^16.4.5",
     "eslint": "^9.18.0",
     "eslint-plugin-react": "^7.37.2",
