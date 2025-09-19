@@ -76,6 +76,7 @@ header {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     position: fixed;
+    z-index: 1;
     width: 100%;
 
     ul {

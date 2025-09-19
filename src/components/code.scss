@@ -8,7 +8,8 @@
   }
 
   .hljs-keyword,
-  .hljs-built_in {/* stylelint-disable-line */
+  .hljs-built_in {
+    /* stylelint-disable-line */
     color: var(--code-keyword);
   }
 
@@ -18,5 +19,27 @@
 
   .hljs-attr {
     color: var(--code-attribute);
+  }
+}
+
+.code-container {
+  position: relative;
+}
+
+.copy-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+  border-radius: 0.25rem;
+
+  &:hover {
+    cursor: pointer;
   }
 }
